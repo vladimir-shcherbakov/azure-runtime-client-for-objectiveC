@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AzureClientRuntime_Tests' do
+  pod 'AzureClientRuntime', :path => '../'
+  
+  
+end
