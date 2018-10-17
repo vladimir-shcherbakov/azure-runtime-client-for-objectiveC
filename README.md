@@ -5,13 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/AzureClientRuntime.svg?style=flat)](https://cocoapods.org/pods/AzureClientRuntime)
 [![Platform](https://img.shields.io/cocoapods/p/AzureClientRuntime.svg?style=flat)](https://cocoapods.org/pods/AzureClientRuntime)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
 ## Installation
+
+Add this pod as a dependency if you are using ObjC generator in AutoRest.
 
 AzureClientRuntime is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
