@@ -1,0 +1,6 @@
+framework module AzureClientRuntime {
+  umbrella header "AzureClientRuntime-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AzureClientRuntime (0.1.0)
+
+DEPENDENCIES:
+  - AzureClientRuntime (from `../`)
+
+EXTERNAL SOURCES:
+  AzureClientRuntime:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AzureClientRuntime: 12937992d6d195c4c5dc6c87fd36e438f59a2bec
+
+PODFILE CHECKSUM: dba1eab5fd52166271f0b2c2311a0f5a40bdc7b7
+
+COCOAPODS: 1.5.3

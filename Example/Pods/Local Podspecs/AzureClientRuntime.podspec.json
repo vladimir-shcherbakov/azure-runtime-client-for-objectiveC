@@ -1,0 +1,22 @@
+{
+  "name": "AzureClientRuntime",
+  "version": "0.1.0",
+  "summary": "A short description of AzureClientRuntime.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vladimir-shcherbakov/AzureClientRuntime",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vladimir-shcherbakov": "vlashch@microsoft.com"
+  },
+  "source": {
+    "git": "https://github.com/vladimir-shcherbakov/AzureClientRuntime.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AzureClientRuntime/Classes/**/*"
+}
