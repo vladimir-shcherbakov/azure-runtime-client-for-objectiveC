@@ -1,0 +1,26 @@
+//
+//  RequestParameters.h
+//  RuntimeClient
+//
+//  Created by Vladimir Shcherbakov on 10/2/18.
+//  Copyright © 2018 Vladimir Shcherbakov. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface RequestParameters : NSObject
+
+@property NSString* url;
+@property NSString* mehod;
+@property NSDictionary* headers;
+@property NSData* body;
+
+
+
++ (instancetype) createWithUrl: (NSString*) url withMethod: (NSString*) method withHeaders: (NSDictionary*) headers withBody: (NSData* _Nullable) body;
+
+@end
+
+NS_ASSUME_NONNULL_END

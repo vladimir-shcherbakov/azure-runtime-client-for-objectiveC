@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import <AzureClientRuntime/AzureClientRuntime.h>
 
 @interface Tests : XCTestCase
 

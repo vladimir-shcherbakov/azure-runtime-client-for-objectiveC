@@ -1,5 +1,5 @@
 framework module AzureClientRuntime {
-  umbrella header "AzureClientRuntime-umbrella.h"
+  umbrella header "AzureClientRuntime.h"
 
   export *
   module * { export * }
