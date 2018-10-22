@@ -10,52 +10,42 @@
 #import "JsonCoder.h"
 #import "DefaultErrorModel.h"
 
-@implementation RequestHelper
+@interface RequestHelper (private)
+
++(void) logRequestBody: (NSData*) body;
++(void) logResponseBody: (NSData*) body;
+
+@end
+
+@implementation RequestHelper (private)
 
 + (void) logRequestBody: (NSData*) body {
-    
     if (body && body.length > 0) {
-        
         if (body.length<1024) {
-            
             NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
-            
             if (bodyAsString != nil) {
-                
                 NSLog(@"\n===> request body: %@", bodyAsString);
-                
             } else {
-                
                 NSLog(@"\n===> request body: %@", body);
             }
-            
         } else {
-            
             NSLog(@"\n===> request body: %lu bytes", (unsigned long)body.length);
         }
-        
     } else {
-        
         NSLog(@"\n<=== request body: <empty>");
     }
 }
 
 + (void) logResponseBody: (NSData*) body {
-    
     if (body && body.length > 0) {
-        
         if (body.length<1024) {
-            
             //NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
             NSError* error;
             id json = [NSJSONSerialization JSONObjectWithData: body
                                                       options: NSJSONReadingAllowFragments
                                                         error: &error];
-            
             if (json != nil) {
-                
                 NSLog(@"\n===> response body: %@", json);
-                
             } else {
                 NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
                 if (bodyAsString != nil)
@@ -63,18 +53,17 @@
                 else
                     NSLog(@"\n===> response body: %@", body);
             }
-            
         } else {
-            
             NSLog(@"\n===> response body: %lu bytes", (unsigned long)body.length);
         }
-        
     } else {
-        
         NSLog(@"\n===> response body: <empty>");
     }
-    
 }
+
+@end
+
+@implementation RequestHelper
 
 + (NSString*) buildUrl: (NSString*) baseUrl
               withPath: (NSString*) path
@@ -84,14 +73,20 @@
     NSString* fullPath =  [NSString stringWithFormat: @"%@%@", baseUrl, path];
     
     for(id key in [pathParams allKeys]) {
-        fullPath = [fullPath stringByReplacingOccurrencesOfString: key
-                                            withString: [pathParams valueForKey:key]];
+        NSString* value = pathParams[key];
+        // FIXME: throw if value is null?
+        fullPath = [fullPath stringByReplacingOccurrencesOfString:key
+                                                       withString:value];
     }
     
     if ([queryParams count] > 0) {
         NSMutableArray * queries = [[NSMutableArray alloc] init];
         for (id key in [queryParams allKeys]) {
-            [queries addObject: [NSString stringWithFormat:@"%@=%@", key, [queryParams valueForKey:key]]];
+            NSString* value = queryParams[key];
+            if (![value isEqual:[NSNull null]]) {
+                [queries addObject: [NSString stringWithFormat:@"%@=%@", key, value]];
+            }
+            // FIXME: show warning if value is nil and ignored?
         }
 
         fullPath = [NSString stringWithFormat: @"%@?%@", fullPath, [queries componentsJoinedByString:@"&"]];

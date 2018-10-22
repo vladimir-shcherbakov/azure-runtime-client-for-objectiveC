@@ -16,7 +16,7 @@
     if (self) {
         self.url = url;
         self.mehod = method;
-        self.headers = headers;
+        self.headers = [[NSMutableDictionary alloc] initWithDictionary:headers];
         self.body = body;
     }
     
@@ -26,6 +26,12 @@
 + (instancetype) createWithUrl: (NSString*) url withMethod: (NSString*) method withHeaders: (NSDictionary*) headers withBody: (NSData* _Nullable) body {
     RequestParameters* p = [[RequestParameters alloc] initWithUrl:url withMethod:method withHeaders:headers withBody:body];
     return p;
+}
+
+-(void)withSpecialHeaders:(NSDictionary*)headers {
+    if (headers) {
+        [self.headers addEntriesFromDictionary:headers];
+    }
 }
 
 @end

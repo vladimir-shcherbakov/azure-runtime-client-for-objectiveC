@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) executeRequest: (RequestParameters*) request
          withErrorClass: (nullable Class) errorClass
            withCallback: (void (^)(OperationError*)) callback;
+
 @end
 
 NS_ASSUME_NONNULL_END

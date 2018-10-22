@@ -19,9 +19,6 @@ typedef NSDate AZTimeSpan;
 typedef NSData AZStream;
 typedef NSString AZBase64Url;
 
-
-
-
 @protocol AZBoolean <NSObject>
 
 - (instancetype) initWithBool: (BOOL) val;
@@ -41,6 +38,11 @@ typedef NSString AZBase64Url;
 + (instancetype) asFalse;
 
 @end
+
+#define AZ_YES [AZBoolean asTrue]
+#define AZ_NO [AZBoolean asFalse]
+#define AZ_NULL [NSNull null]
+#define AZ_NULLABLE(VAR) VAR?VAR:AZ_NULL
 
 @interface NSString (base64)
 

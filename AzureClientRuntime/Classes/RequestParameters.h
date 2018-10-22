@@ -14,12 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString* url;
 @property NSString* mehod;
-@property NSDictionary* headers;
+@property NSMutableDictionary* headers;
 @property NSData* body;
 
 
 
 + (instancetype) createWithUrl: (NSString*) url withMethod: (NSString*) method withHeaders: (NSDictionary*) headers withBody: (NSData* _Nullable) body;
+-(void)withSpecialHeaders:(NSDictionary* _Nullable)headers;
 
 @end
 

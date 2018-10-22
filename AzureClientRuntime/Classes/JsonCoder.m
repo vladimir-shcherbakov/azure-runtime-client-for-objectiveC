@@ -97,8 +97,6 @@
         return [object toString];
         
     } else {
-        
-        //return [NSString stringWithFormat:@"%@", object];
         return object;
     }
 }
@@ -172,9 +170,6 @@
 @end
 
 @implementation JsonCoder
-
-//NSString* str = [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
-
 
 + (NSData*) encodeObject: (id) object {
     
@@ -354,112 +349,43 @@
     dd[key] = [JsonCoder serilializeObject:object];
 }
 
-//NSError *error;
-// encoding
-//NSData* jsonData = [NSJSONSerialization dataWithJSONObject : dict  options:NSJSONWritingSortedKeys error : &error];
-// decoding
-//id arrayOrDict = [NSJSONSerialization JSONObjectWithData : jsonData options : NSJSONReadingAllowFragments error : &error];
+static id flatten(NSString* key, id dictionary) {
+    id value = dictionary[key];
+    if ([key containsString:@"."]) {
+        value = dictionary;
+        NSArray *arr = [key componentsSeparatedByString: @"."];
+        for (int i=0; i<arr.count; i++) {
+            value = value[arr[i]];
+        }
+    }
+    return value;
+}
 
 // From Coder protocol
 - (nullable id) decodeObjectForKey: (NSString *) key
                        objectClass: (Class) objectClass {
-    
-    return [JsonCoder deserilializeObject:dd[key]
+    id value = flatten(key, dd);
+    return [JsonCoder deserilializeObject:value
                                    forKey:key
                               objectClass:objectClass];
-//    if (nil == dd[key] || [dd[key]isKindOfClass:[NSNull class]]) {
-//
-//        return nil;
-//    }
-//
-//    if ([objectClass conformsToProtocol:@protocol(Codable)]) {
-//
-//        JsonCoder* decoder = [[JsonCoder alloc] initWithDictionary:dd[key]];
-//        return [[objectClass alloc] initWithDecoder: decoder];
-//
-//    }
-//
-//    if ([objectClass conformsToProtocol:@protocol(DateString)]) {
-//        if (![dd[key]isKindOfClass:[NSString class]]) {
-//            @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-//                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [dd[key] class]]
-//                                         userInfo:nil];
-//        }
-//
-//        return [[objectClass alloc] initFromString:dd[key]];
-//    }
-//
-//    if ([objectClass conformsToProtocol:@protocol(StringEnum)]) {
-//        if (![dd[key]isKindOfClass:[NSString class]]) {
-//            @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-//                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [dd[key] class]]
-//                                         userInfo:nil];
-//        }
-//
-//        return [objectClass fromString: dd[key]];
-//    }
-//
-//    if ([objectClass conformsToProtocol:@protocol(AZBoolean)]) {
-//        if (![dd[key]isKindOfClass:[NSNumber class]]) {
-//            @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-//                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [dd[key] class]]
-//                                         userInfo:nil];
-//        }
-//
-//        NSNumber* val = dd[key];
-//        return [[objectClass alloc] initWithBool:[val boolValue]];
-//    }
-//
-//    if ([objectClass isEqual:[NSData class]]) {
-//
-//        return [[NSData alloc]initWithBase64EncodedString:dd[key] options:0];
-//    }
-//
-//    if (![dd[key]isKindOfClass:objectClass]) {
-//        @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-//                                       reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [dd[key] class]]
-//                                     userInfo:nil];
-//    }
-//
-//    return dd[key];
 }
 
 - (nullable id) decodeDictionaryForKey: (NSString *) key
                           elementClass: (nullable Class) elementClass {
+    id value = flatten(key, dd);
     
-    if (nil == dd[key]) {
+    if (nil == value) {
         return nil;
     }
     
-    if (![dd[key] isKindOfClass:[NSDictionary class]]) {
+    if (![value isKindOfClass:[NSDictionary class]]) {
         
         @throw [NSException
                 exceptionWithName:@"IncorrectDecodingMethod"
                 reason:@"You are trying to decode an element which is not an array with the 'decodeDictionaryForKey:elementClass:' method" userInfo:nil];
     }
-    
-    // container with elements of objc types
-//    if (elementClass == nil) {
-//        return dd[key];
-//    }
-    
-//    if ([elementClass conformsToProtocol:@protocol(Codable)]) {
-//
-//        NSDictionary* dict = dd[key];
-//        NSArray* keys = [dict allKeys];
-//        NSMutableDictionary* dst = [NSMutableDictionary new];
-//
-//        for (int i=0; i<[keys count]; i++) {
-//            NSString* k = keys[i];
-//            JsonCoder* decoder = [[JsonCoder alloc] initWithDictionary:dict[k]];
-//            id value = [[elementClass alloc] initWithDecoder: decoder];
-//            [dst setObject:value forKey:k];
-//        }
-//
-//        return dst;
-//     }
-   
-    NSDictionary* src = dd[key];
+  
+    NSDictionary* src = value;
     NSMutableDictionary* dst = [NSMutableDictionary new];
 
     for (id key in [src allKeys]) {
@@ -473,51 +399,28 @@
 
 - (nullable id) decodeArrayForKey: (NSString *) key
                      elementClass: (nullable Class) elementClass {
+    id value = flatten(key, dd);
     
-    if (nil == dd[key]) {
-
+    if (nil == value) {
         return nil;
     }
     
-     if (![dd[key] isKindOfClass:[NSArray class]]) {
-     
+    if (![value isKindOfClass:[NSArray class]]) {
         @throw [NSException
                 exceptionWithName:@"IncorrectDecodingMethod"
                 reason:@"You are trying to decode an element which is not an array with the 'decodeArrayForKey:elementClass:' method" userInfo:nil];
     }
     
-//// container with elements of objc types
-//    if ([elementClass isSubclassOfClass:[NSString class]]
-//        || [elementClass isSubclassOfClass:[NSNub class]) {
-//        return dd[key];
-//    }
-    
-    NSArray* src = dd[key];
+    NSArray* src = value;
     NSMutableArray* dst = [NSMutableArray new];
     
     for (id item in src) {
-        
         [dst addObject: [JsonCoder deserilializeObject:item
                                                 forKey:key
                                            objectClass:elementClass]];
     }
     
     return dst;
-//    if ([elementClass conformsToProtocol:@protocol(Codable)]) {
-//
-//        NSArray* arr = dd[key];
-//        NSMutableArray* dst = [NSMutableArray new];
-//
-//        for (int i=0; i<[arr count]; i++) {
-//            JsonCoder* decoder = [[JsonCoder alloc] initWithDictionary:arr[i]];
-//            id item = [[elementClass alloc] initWithDecoder: decoder];
-//            [dst addObject:item];
-//        }
-//
-//        return dst;
-//    }
-    
-//    return  dd[key];
 }
 
 @end

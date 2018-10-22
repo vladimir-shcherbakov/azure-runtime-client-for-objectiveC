@@ -12,7 +12,6 @@
 #import "ComplexModel.h"
 #import "SimpleModel.h"
 
-
 @interface RequestHelperTests : XCTestCase
 
 @end
@@ -33,10 +32,30 @@
     
     NSString* baseUrl = @"https://{accountName}.blob.core.windows.net";
     NSString* path = @"/{container}/{blob}";
-    NSDictionary* pathParams = @{ @"{accountName}": @"first", @"{container}": @"second", @"{blob}": @"third"};
-    NSDictionary* queryParams = @{ @"snapshot": @"first", @"timeout": @"second"};
-    NSString* url = [RequestHelper buildUrl: baseUrl withPath:path withPathParams:pathParams withQueryParams:queryParams];
-    XCTAssertEqualObjects(@"https://first.blob.core.windows.net/second/third?timeout=second&snapshot=first", url);
+    NSDictionary* pathParams = @{
+                                 @"{accountName}": @"first",
+                                 @"{container}": @"second",
+                                 @"{blob}": @"third"};
+    NSString* val1 = nil;
+    NSString* val2 = @"second";
+    NSDictionary* queryParams = @{ @"snapshot": @"first",
+                                   @"key1": AZ_NULLABLE(val1),
+                                   @"key2": AZ_NULLABLE(val2)};
+    
+    NSString* url = [RequestHelper buildUrl:baseUrl
+                                   withPath:path
+                             withPathParams:pathParams
+                            withQueryParams:queryParams];
+    
+    XCTAssertEqualObjects(@"https://first.blob.core.windows.net/second/third?snapshot=first&key2=second", url);
+}
+
+- (void) testRequestParametersSpecialHeaders {
+    RequestParameters* rp = [RequestParameters createWithUrl: @"https://windows.net"
+                                                    withMethod: @"POST"
+                                                   withHeaders: @{@"Content-Type" : @"application/octet-stream"}
+                                                      withBody: nil];
+    [rp withSpecialHeaders:@{@"sk1":@"sv1", @"sk2":@"sv2"}];
 }
 
 
