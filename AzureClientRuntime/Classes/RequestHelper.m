@@ -9,6 +9,7 @@
 #import "RequestHelper.h"
 #import "JsonCoder.h"
 #import "DefaultErrorModel.h"
+#import "AzureTypes.h"
 
 @interface RequestHelper (private)
 
@@ -82,11 +83,11 @@
     if ([queryParams count] > 0) {
         NSMutableArray * queries = [[NSMutableArray alloc] init];
         for (id key in [queryParams allKeys]) {
-            NSString* value = queryParams[key];
+            id value = queryParams[key];
             if (![value isEqual:[NSNull null]]) {
+                if ([value conformsToProtocol:@protocol(AZBoolean)]) value = [value getBool] ? @"true" : @"false";
                 [queries addObject: [NSString stringWithFormat:@"%@=%@", key, value]];
             }
-            // FIXME: show warning if value is nil and ignored?
         }
 
         fullPath = [NSString stringWithFormat: @"%@?%@", fullPath, [queries componentsJoinedByString:@"&"]];
