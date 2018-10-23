@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AzureClientRuntime'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Provides comuniction with Azure RESTful server.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Use this pod as a dependency if you are using ObjC generator in AutoRest.
+Use this pod as a dependency for a library generated with the AutoRest ObjC generator.
                        DESC
 
   s.homepage         = 'https://github.com/vladimir-shcherbakov/azure-runtime-client-for-objectiveC'
