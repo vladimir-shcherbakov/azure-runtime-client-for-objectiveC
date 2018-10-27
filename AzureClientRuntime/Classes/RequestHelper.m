@@ -16,14 +16,20 @@
 +(void) logRequestUrl: (NSString*) url;
 +(void) logRequestBody: (NSData*) body;
 +(void) logResponseBody: (NSData*) body;
-+(NSDictionary*)specialHeaders;
+//+(NSDictionary*)specialHeaders;
+@property (class, readonly) NSDictionary* specialHeaders;
 
 @end
 
 @implementation RequestHelper (private)
 
 +(NSDictionary*)specialHeaders {
-    return @{@"user-agent":@"AutoRest-ObjectiveC"};
+    static NSDictionary* _specialHeaders;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _specialHeaders = @{@"user-agent":@"AutoRest-ObjectiveC"};
+    });
+    return _specialHeaders;
 }
 
 +(void) logRequestUrl: (NSString*) url {
@@ -87,7 +93,6 @@
     
     for(id key in [pathParams allKeys]) {
         NSString* value = pathParams[key];
-        // FIXME: throw if value is null?
         fullPath = [fullPath stringByReplacingOccurrencesOfString:key
                                                        withString:value];
     }
@@ -132,7 +137,7 @@
 + (void) executeRequest: (RequestParameters*) requestParams
            withCallback: (void (^)(NSData* _Nullable, NSInteger statusCode, NSError* _Nullable)) callback {
 
-    [requestParams withSpecialHeaders: [RequestHelper specialHeaders]];
+    [requestParams withSpecialHeaders: RequestHelper.specialHeaders];
 
     NSURL *url = [NSURL URLWithString:requestParams.url];
     [RequestHelper logRequestUrl:requestParams.url];
