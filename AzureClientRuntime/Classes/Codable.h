@@ -20,12 +20,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol StringEnum <NSObject>
-
-+ (instancetype) fromString: (NSString *) string;
-
-+ (NSString *) toStringValue: (id<StringEnum>) value;
-
-@end
-
 NS_ASSUME_NONNULL_END

@@ -26,6 +26,14 @@ typedef NSString AZBase64Url;
 
 @end
 
+@protocol StringEnum <NSObject>
+
++ (instancetype) fromString: (NSString *) string;
+
++ (NSString *) toStringValue: (id<StringEnum>) value;
+
+@end
+
 @interface AZBoolean : NSObject <AZBoolean>
 {
     BOOL _val;
