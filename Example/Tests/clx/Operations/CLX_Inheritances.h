@@ -5,7 +5,7 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_Siamese.h"
+#import "CLX_Siamese.h"
 @class AZOperationError;
 
 /**

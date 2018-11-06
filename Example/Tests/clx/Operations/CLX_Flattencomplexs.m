@@ -7,7 +7,7 @@
 #import <AzureClientRuntime/AzureClientRuntime.h>
 #import "CLX_Flattencomplexs.h"
 #import "AZDefaultErrorModel.h"
-#import "../CLX_AutoRestComplexTestServiceService.h"
+#import "CLX_AutoRestComplexTestServiceService.h"
 
 /**
  * The protocol CLX_FlattencomplexsProtocol implementation

@@ -7,7 +7,7 @@
 #import <AzureClientRuntime/AzureClientRuntime.h>
 #import "CLX_Readonlypropertys.h"
 #import "CLX_Error.h"
-#import "../CLX_AutoRestComplexTestServiceService.h"
+#import "CLX_AutoRestComplexTestServiceService.h"
 
 /**
  * The protocol CLX_ReadonlypropertysProtocol implementation

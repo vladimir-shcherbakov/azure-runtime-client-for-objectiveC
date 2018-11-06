@@ -5,7 +5,7 @@
  */
 
 #import <XCTest/XCTest.h>
-#include <AzureClientRuntime/AzureClientRuntime.h>
+#import <AzureClientRuntime/AzureClientRuntime.h>
 #import "ARR_AutoRestSwaggerBATArrayServiceService.h"
 @interface ARR_AutoRestSwaggerBATArrayServiceServiceTests : XCTestCase
     @property id<ARR_AutoRestSwaggerBATArrayServiceServiceProtocol> service;

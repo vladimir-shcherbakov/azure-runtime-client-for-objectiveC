@@ -5,8 +5,9 @@
  */
 
 #import <XCTest/XCTest.h>
-#include <AzureClientRuntime/AzureClientRuntime.h>
+#import <AzureClientRuntime/AzureClientRuntime.h>
 #import "FL_AutoRestSwaggerBATFileServiceService.h"
+
 @interface FL_AutoRestSwaggerBATFileServiceServiceTests : XCTestCase
     @property id<FL_AutoRestSwaggerBATFileServiceServiceProtocol> service;
 @end

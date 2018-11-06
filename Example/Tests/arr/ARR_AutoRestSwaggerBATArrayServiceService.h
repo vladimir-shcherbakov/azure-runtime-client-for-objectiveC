@@ -4,7 +4,7 @@
  * regenerated.
  */
 
-#include <AzureClientRuntime/AzureClientRuntime.h>
+#import <AzureClientRuntime/AzureClientRuntime.h>
 #import "Operations/ARR_Arrays.h"
 
 /**

@@ -5,7 +5,7 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_MyBaseType.h"
+#import "CLX_MyBaseType.h"
 @class AZOperationError;
 
 /**

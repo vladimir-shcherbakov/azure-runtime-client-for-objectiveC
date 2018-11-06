@@ -5,7 +5,7 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_ReadonlyObj.h"
+#import "CLX_ReadonlyObj.h"
 @class AZOperationError;
 
 /**

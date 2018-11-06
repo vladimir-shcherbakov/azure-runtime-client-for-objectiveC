@@ -5,7 +5,7 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_ArrayWrapper.h"
+#import "CLX_ArrayWrapper.h"
 @class AZOperationError;
 
 /**

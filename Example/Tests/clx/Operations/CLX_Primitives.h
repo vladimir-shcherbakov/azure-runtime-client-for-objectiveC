@@ -5,17 +5,17 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_BooleanWrapper.h"
-#import "../Models/CLX_ByteWrapper.h"
-#import "../Models/CLX_Datetimerfc1123Wrapper.h"
-#import "../Models/CLX_DatetimeWrapper.h"
-#import "../Models/CLX_DateWrapper.h"
-#import "../Models/CLX_DoubleWrapper.h"
-#import "../Models/CLX_DurationWrapper.h"
-#import "../Models/CLX_FloatWrapper.h"
-#import "../Models/CLX_IntWrapper.h"
-#import "../Models/CLX_LongWrapper.h"
-#import "../Models/CLX_StringWrapper.h"
+#import "CLX_BooleanWrapper.h"
+#import "CLX_ByteWrapper.h"
+#import "CLX_Datetimerfc1123Wrapper.h"
+#import "CLX_DatetimeWrapper.h"
+#import "CLX_DateWrapper.h"
+#import "CLX_DoubleWrapper.h"
+#import "CLX_DurationWrapper.h"
+#import "CLX_FloatWrapper.h"
+#import "CLX_IntWrapper.h"
+#import "CLX_LongWrapper.h"
+#import "CLX_StringWrapper.h"
 @class AZOperationError;
 
 /**

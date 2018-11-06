@@ -7,7 +7,7 @@
 #import <AzureClientRuntime/AzureClientRuntime.h>
 #import "ARR_Arrays.h"
 #import "ARR_Error.h"
-#import "../ARR_AutoRestSwaggerBATArrayServiceService.h"
+#import "ARR_AutoRestSwaggerBATArrayServiceService.h"
 
 /**
  * The protocol ARR_ArraysProtocol implementation

@@ -4,7 +4,7 @@
  * regenerated.
 */
 
-#include <AzureClientRuntime/AzureClientRuntime.h>
+#import <AzureClientRuntime/AzureClientRuntime.h>
 
 /**
  * The ARR_Product model.

@@ -4,16 +4,16 @@
  * regenerated.
  */
 
-#include <AzureClientRuntime/AzureClientRuntime.h>
-#import "Operations/CLX_Basics.h"
-#import "Operations/CLX_Primitives.h"
-#import "Operations/CLX_Arrays.h"
-#import "Operations/CLX_Dictionarys.h"
-#import "Operations/CLX_Inheritances.h"
-#import "Operations/CLX_Polymorphisms.h"
-#import "Operations/CLX_Polymorphicrecursives.h"
-#import "Operations/CLX_Readonlypropertys.h"
-#import "Operations/CLX_Flattencomplexs.h"
+#import <AzureClientRuntime/AzureClientRuntime.h>
+#import "CLX_Basics.h"
+#import "CLX_Primitives.h"
+#import "CLX_Arrays.h"
+#import "CLX_Dictionarys.h"
+#import "CLX_Inheritances.h"
+#import "CLX_Polymorphisms.h"
+#import "CLX_Polymorphicrecursives.h"
+#import "CLX_Readonlypropertys.h"
+#import "CLX_Flattencomplexs.h"
 
 /**
  * The interface for AutoRestComplexTestService class.

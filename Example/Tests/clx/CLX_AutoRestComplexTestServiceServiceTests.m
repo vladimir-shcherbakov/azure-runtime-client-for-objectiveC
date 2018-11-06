@@ -5,8 +5,9 @@
  */
 
 #import <XCTest/XCTest.h>
-#include <AzureClientRuntime/AzureClientRuntime.h>
+#import <AzureClientRuntime/AzureClientRuntime.h>
 #import "CLX_AutoRestComplexTestServiceService.h"
+
 @interface CLX_AutoRestComplexTestServiceServiceTests : XCTestCase
     @property id<CLX_AutoRestComplexTestServiceServiceProtocol> service;
 @end

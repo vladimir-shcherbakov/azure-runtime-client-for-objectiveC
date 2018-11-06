@@ -7,7 +7,7 @@
 #import <AzureClientRuntime/AzureClientRuntime.h>
 #import "FL_Files.h"
 #import "FL_Error.h"
-#import "../FL_AutoRestSwaggerBATFileServiceService.h"
+#import "FL_AutoRestSwaggerBATFileServiceService.h"
 
 /**
  * The protocol FL_FilesProtocol implementation

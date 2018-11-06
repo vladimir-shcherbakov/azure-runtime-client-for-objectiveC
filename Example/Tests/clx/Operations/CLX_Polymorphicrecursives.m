@@ -7,7 +7,7 @@
 #import <AzureClientRuntime/AzureClientRuntime.h>
 #import "CLX_Polymorphicrecursives.h"
 #import "CLX_Error.h"
-#import "../CLX_AutoRestComplexTestServiceService.h"
+#import "CLX_AutoRestComplexTestServiceService.h"
 
 /**
  * The protocol CLX_PolymorphicrecursivesProtocol implementation

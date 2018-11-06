@@ -5,8 +5,8 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/CLX_Fish.h"
-#import "../Models/CLX_Salmon.h"
+#import "CLX_Fish.h"
+#import "CLX_Salmon.h"
 @class AZOperationError;
 
 /**

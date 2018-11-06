@@ -5,8 +5,8 @@
  */
 
 #import <AzureClientRuntime/AzureClientRuntime.h>
-#import "../Models/ARR_FooEnum.h"
-#import "../Models/ARR_Product.h"
+#import "ARR_FooEnum.h"
+#import "ARR_Product.h"
 @class AZOperationError;
 
 /**

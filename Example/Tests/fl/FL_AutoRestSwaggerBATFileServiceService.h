@@ -4,8 +4,8 @@
  * regenerated.
  */
 
-#include <AzureClientRuntime/AzureClientRuntime.h>
-#import "Operations/FL_Files.h"
+#import <AzureClientRuntime/AzureClientRuntime.h>
+#import "FL_Files.h"
 
 /**
  * The interface for AutoRestSwaggerBATFileService class.
