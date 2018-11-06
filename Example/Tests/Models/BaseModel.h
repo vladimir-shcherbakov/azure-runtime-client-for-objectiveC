@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseModel : NSObject <Codable>
+@interface BaseModel : NSObject <AZCodable>
 
 @property NSArray<SimpleModel*>* baseArray;
 @property NSDictionary<NSString*,SimpleModel*>* baseDict;

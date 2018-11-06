@@ -8,20 +8,17 @@
 
 #import "AzureDate.h"
 
-@implementation Date
+@implementation AZDate
 
 - (instancetype) init {
-    
     return [self initFromString:nil];
 }
 
-- (instancetype) initFromString: (NSString*)string {
-    
+- (instancetype)initFromString:(NSString*)string {
     return [self initWithFormat:@"yyyy-MM-dd" fromString:string];
 }
 
-- (instancetype) initWithFormat: (NSString*) format fromString: string {
-    
+- (instancetype)initWithFormat:(NSString*)format fromString:string {
     if (self = [super init]) {
         self.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
         _dateFormatter = [NSDateFormatter new];
@@ -29,7 +26,7 @@
         _dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
         
         if (string) {
-            NSDateComponents* src = [Date dateFromString:string withFormatter:_dateFormatter];
+            NSDateComponents* src = [AZDate dateFromString:string withFormatter:_dateFormatter];
             src.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
             self.year = src.year;
             self.month = src.month;
@@ -39,16 +36,14 @@
             self.second = src.second;
         }
     }
-    
     return self;
 }
 
-
-+ (NSDateComponents*)dateFromString:(NSString *)string withFormatter: (NSDateFormatter*) formater {
-    NSDate* date = [formater dateFromString: [string uppercaseString]];
++ (NSDateComponents*)dateFromString:(NSString *)string withFormatter:(NSDateFormatter*)formater {
+    NSDate* date = [formater dateFromString:[string uppercaseString]];
     if (date == nil) {
         @throw [NSException exceptionWithName:@"DateFromString"
-                                       reason:[NSString stringWithFormat:@"Failed to get NSDate from the string %@", string]
+                                       reason:[NSString stringWithFormat:@"Failed to parse date from the string '%@'", string]
                                      userInfo:nil];
     }
     NSCalendar * cal = [NSCalendar currentCalendar];
@@ -64,14 +59,9 @@
     return [_dateFormatter stringFromDate:date];
 }
 
-
-
 @end
 
-
-
-@implementation DateTimeRfc1123
-
+@implementation AZDateTimeRfc1123
 
 - (instancetype) initFromString: (NSString*)string {
     
@@ -81,10 +71,7 @@
 @end
 
 
-
-
-
-@implementation DateTime
+@implementation AZDateTime
 
 - (instancetype) initFromString: (NSString*)string {
     

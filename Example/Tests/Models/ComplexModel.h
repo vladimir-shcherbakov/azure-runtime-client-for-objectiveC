@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //@class SimpleModel;
 
-@interface ComplexModel : BaseModel <Codable>
+@interface ComplexModel : BaseModel <AZCodable>
 
 //@property NSString* string;
 @property SimpleModel* complexSimpleModel;

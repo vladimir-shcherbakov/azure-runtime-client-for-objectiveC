@@ -11,64 +11,65 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		A6C5B9234EB49F2FAAD6A6A7 /* Pods_AzureClientRuntime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19B6FFE1C5BBE9BFFE9324F /* Pods_AzureClientRuntime_Tests.framework */; };
+		C890231121910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022BA21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.m */; };
+		C890231221910A8C00ECFF82 /* CLX_DictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022BC21910A8C00ECFF82 /* CLX_DictionaryWrapper.m */; };
+		C890231321910A8C00ECFF82 /* CLX_SmartSalmon.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022BD21910A8C00ECFF82 /* CLX_SmartSalmon.m */; };
+		C890231421910A8C00ECFF82 /* CLX_BooleanWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022C121910A8C00ECFF82 /* CLX_BooleanWrapper.m */; };
+		C890231521910A8C00ECFF82 /* CLX_LongWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022C421910A8C00ECFF82 /* CLX_LongWrapper.m */; };
+		C890231621910A8C00ECFF82 /* CLX_Sawshark.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022C721910A8C00ECFF82 /* CLX_Sawshark.m */; };
+		C890231721910A8C00ECFF82 /* CLX_Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022C821910A8C00ECFF82 /* CLX_Shark.m */; };
+		C890231821910A8C00ECFF82 /* CLX_DateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022CB21910A8C00ECFF82 /* CLX_DateWrapper.m */; };
+		C890231921910A8C00ECFF82 /* CLX_ArrayWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022CC21910A8C00ECFF82 /* CLX_ArrayWrapper.m */; };
+		C890231A21910A8C00ECFF82 /* CLX_StringWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022CD21910A8C00ECFF82 /* CLX_StringWrapper.m */; };
+		C890231B21910A8C00ECFF82 /* CLX_Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022CE21910A8C00ECFF82 /* CLX_Cat.m */; };
+		C890231C21910A8C00ECFF82 /* CLX_DoubleWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022CF21910A8C00ECFF82 /* CLX_DoubleWrapper.m */; };
+		C890231D21910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022D321910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.m */; };
+		C890231E21910A8C00ECFF82 /* CLX_Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022D421910A8C00ECFF82 /* CLX_Pet.m */; };
+		C890231F21910A8C00ECFF82 /* CLX_FloatWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022D721910A8C00ECFF82 /* CLX_FloatWrapper.m */; };
+		C890232021910A8C00ECFF82 /* CLX_ReadonlyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022D821910A8C00ECFF82 /* CLX_ReadonlyObj.m */; };
+		C890232121910A8C00ECFF82 /* CLX_GoblinSharkColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022D921910A8C00ECFF82 /* CLX_GoblinSharkColor.m */; };
+		C890232221910A8C00ECFF82 /* CLX_Siamese.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022DA21910A8C00ECFF82 /* CLX_Siamese.m */; };
+		C890232321910A8C00ECFF82 /* CLX_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022DB21910A8C00ECFF82 /* CLX_Basic.m */; };
+		C890232421910A8C00ECFF82 /* CLX_MyDerivedType.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022DC21910A8C00ECFF82 /* CLX_MyDerivedType.m */; };
+		C890232521910A8C00ECFF82 /* CLX_Cookiecuttershark.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E021910A8C00ECFF82 /* CLX_Cookiecuttershark.m */; };
+		C890232621910A8C00ECFF82 /* CLX_Goblinshark.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E121910A8C00ECFF82 /* CLX_Goblinshark.m */; };
+		C890232721910A8C00ECFF82 /* CLX_CMYKColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E321910A8C00ECFF82 /* CLX_CMYKColors.m */; };
+		C890232821910A8C00ECFF82 /* CLX_IntWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E421910A8C00ECFF82 /* CLX_IntWrapper.m */; };
+		C890232921910A8C00ECFF82 /* CLX_DurationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E621910A8C00ECFF82 /* CLX_DurationWrapper.m */; };
+		C890232A21910A8C00ECFF82 /* CLX_MyKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E721910A8C00ECFF82 /* CLX_MyKind.m */; };
+		C890232B21910A8C00ECFF82 /* CLX_MyBaseType.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022E921910A8C00ECFF82 /* CLX_MyBaseType.m */; };
+		C890232C21910A8C00ECFF82 /* CLX_Salmon.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022EA21910A8C00ECFF82 /* CLX_Salmon.m */; };
+		C890232D21910A8C00ECFF82 /* CLX_DatetimeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022EB21910A8C00ECFF82 /* CLX_DatetimeWrapper.m */; };
+		C890232E21910A8C00ECFF82 /* CLX_Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022F021910A8C00ECFF82 /* CLX_Dog.m */; };
+		C890232F21910A8C00ECFF82 /* CLX_ByteWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022F121910A8C00ECFF82 /* CLX_ByteWrapper.m */; };
+		C890233021910A8C00ECFF82 /* CLX_Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022F921910A8C00ECFF82 /* CLX_Fish.m */; };
+		C890233121910A8C00ECFF82 /* CLX_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022FA21910A8C00ECFF82 /* CLX_Error.m */; };
+		C890233221910A8C00ECFF82 /* CLX_Inheritances.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022FE21910A8C00ECFF82 /* CLX_Inheritances.m */; };
+		C890233321910A8C00ECFF82 /* CLX_Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = C89022FF21910A8C00ECFF82 /* CLX_Basics.m */; };
+		C890233421910A8C00ECFF82 /* CLX_Flattencomplexs.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230021910A8C00ECFF82 /* CLX_Flattencomplexs.m */; };
+		C890233521910A8C00ECFF82 /* CLX_Polymorphicrecursives.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230221910A8C00ECFF82 /* CLX_Polymorphicrecursives.m */; };
+		C890233621910A8C00ECFF82 /* CLX_Dictionarys.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230321910A8C00ECFF82 /* CLX_Dictionarys.m */; };
+		C890233721910A8C00ECFF82 /* CLX_Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230521910A8C00ECFF82 /* CLX_Arrays.m */; };
+		C890233821910A8C00ECFF82 /* CLX_Polymorphisms.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230621910A8C00ECFF82 /* CLX_Polymorphisms.m */; };
+		C890233921910A8C00ECFF82 /* CLX_Readonlypropertys.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230921910A8C00ECFF82 /* CLX_Readonlypropertys.m */; };
+		C890233A21910A8C00ECFF82 /* CLX_Primitives.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230C21910A8C00ECFF82 /* CLX_Primitives.m */; };
+		C890233B21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C890230F21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m */; };
+		C89023462191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C890233D2191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceServiceTests.m */; };
+		C89023472191143D00ECFF82 /* FL_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = C89023412191143D00ECFF82 /* FL_Error.m */; };
+		C89023482191143D00ECFF82 /* FL_Files.m in Sources */ = {isa = PBXBuildFile; fileRef = C89023432191143D00ECFF82 /* FL_Files.m */; };
+		C89023492191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89023452191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.m */; };
+		C8902358219115BA00ECFF82 /* ARR_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = C890234D219115BA00ECFF82 /* ARR_Error.m */; };
+		C8902359219115BA00ECFF82 /* ARR_FooEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = C890234F219115BA00ECFF82 /* ARR_FooEnum.m */; };
+		C890235A219115BA00ECFF82 /* ARR_Product.m in Sources */ = {isa = PBXBuildFile; fileRef = C8902351219115BA00ECFF82 /* ARR_Product.m */; };
+		C890235B219115BA00ECFF82 /* ARR_Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = C8902354219115BA00ECFF82 /* ARR_Arrays.m */; };
+		C890235C219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8902356219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceServiceTests.m */; };
+		C890235D219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8902357219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.m */; };
 		C8FE01B72177F21000D1FD2E /* JsonCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01B52177F21000D1FD2E /* JsonCoderTests.m */; };
 		C8FE01B82177F21000D1FD2E /* RequestHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01B62177F21000D1FD2E /* RequestHelperTests.m */; };
-		C8FE02302177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01BA2177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.m */; };
-		C8FE02312177F24C00D1FD2E /* AutoRestSwaggerBATArrayServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01BB2177F24C00D1FD2E /* AutoRestSwaggerBATArrayServiceTests.m */; };
-		C8FE02322177F24C00D1FD2E /* FooEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01BE2177F24C00D1FD2E /* FooEnum.m */; };
-		C8FE02332177F24C00D1FD2E /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01BF2177F24C00D1FD2E /* Product.m */; };
-		C8FE02342177F24C00D1FD2E /* Arrays1.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01C32177F24C00D1FD2E /* Arrays1.m */; };
-		C8FE02352177F24C00D1FD2E /* Error1.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01C92177F24C00D1FD2E /* Error1.m */; };
-		C8FE02362177F24C00D1FD2E /* Files.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01CB2177F24C00D1FD2E /* Files.m */; };
-		C8FE02372177F24C00D1FD2E /* BodyFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01CC2177F24C00D1FD2E /* BodyFileTests.m */; };
-		C8FE02382177F24C00D1FD2E /* AutoRestSwaggerBATFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01CE2177F24C00D1FD2E /* AutoRestSwaggerBATFileService.m */; };
 		C8FE02392177F24C00D1FD2E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01D12177F24C00D1FD2E /* BaseModel.m */; };
 		C8FE023A2177F24C00D1FD2E /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01D22177F24C00D1FD2E /* Note.m */; };
 		C8FE023B2177F24C00D1FD2E /* ComplexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01D42177F24C00D1FD2E /* ComplexModel.m */; };
 		C8FE023C2177F24C00D1FD2E /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01D72177F24C00D1FD2E /* SimpleModel.m */; };
-		C8FE023D2177F24C00D1FD2E /* BodyComplexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01DA2177F24C00D1FD2E /* BodyComplexTests.m */; };
-		C8FE023E2177F24C00D1FD2E /* ReadonlyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01DD2177F24C00D1FD2E /* ReadonlyObj.m */; };
-		C8FE023F2177F24C00D1FD2E /* IntWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01DE2177F24C00D1FD2E /* IntWrapper.m */; };
-		C8FE02402177F24C00D1FD2E /* CMYKColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01DF2177F24C00D1FD2E /* CMYKColors.m */; };
-		C8FE02412177F24C00D1FD2E /* Datetimerfc1123Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E02177F24C00D1FD2E /* Datetimerfc1123Wrapper.m */; };
-		C8FE02422177F24C00D1FD2E /* Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E22177F24C00D1FD2E /* Basic.m */; };
-		C8FE02432177F24C00D1FD2E /* Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E32177F24C00D1FD2E /* Shark.m */; };
-		C8FE02442177F24C00D1FD2E /* Cookiecuttershark.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E62177F24C00D1FD2E /* Cookiecuttershark.m */; };
-		C8FE02452177F24C00D1FD2E /* DateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E82177F24C00D1FD2E /* DateWrapper.m */; };
-		C8FE02462177F24C00D1FD2E /* MyDerivedType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01E92177F24C00D1FD2E /* MyDerivedType.m */; };
-		C8FE02472177F24C00D1FD2E /* GoblinSharkColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01EA2177F24C00D1FD2E /* GoblinSharkColor.m */; };
-		C8FE02482177F24C00D1FD2E /* LongWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01EC2177F24C00D1FD2E /* LongWrapper.m */; };
-		C8FE02492177F24C00D1FD2E /* ArrayWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01ED2177F24C00D1FD2E /* ArrayWrapper.m */; };
-		C8FE024A2177F24C00D1FD2E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F12177F24C00D1FD2E /* Cat.m */; };
-		C8FE024B2177F24C00D1FD2E /* BooleanWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F32177F24C00D1FD2E /* BooleanWrapper.m */; };
-		C8FE024C2177F24C00D1FD2E /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F42177F24C00D1FD2E /* Fish.m */; };
-		C8FE024D2177F24C00D1FD2E /* SmartSalmon.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F52177F24C00D1FD2E /* SmartSalmon.m */; };
-		C8FE024E2177F24C00D1FD2E /* MyBaseType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F62177F24C00D1FD2E /* MyBaseType.m */; };
-		C8FE024F2177F24C00D1FD2E /* FloatWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01F92177F24C00D1FD2E /* FloatWrapper.m */; };
-		C8FE02502177F24C00D1FD2E /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01FA2177F24C00D1FD2E /* Pet.m */; };
-		C8FE02512177F24C00D1FD2E /* DictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE01FD2177F24C00D1FD2E /* DictionaryWrapper.m */; };
-		C8FE02522177F24C00D1FD2E /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02012177F24C00D1FD2E /* Error.m */; };
-		C8FE02532177F24C00D1FD2E /* ByteWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02042177F24C00D1FD2E /* ByteWrapper.m */; };
-		C8FE02542177F24C00D1FD2E /* Salmon.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02072177F24C00D1FD2E /* Salmon.m */; };
-		C8FE02552177F24C00D1FD2E /* DurationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02092177F24C00D1FD2E /* DurationWrapper.m */; };
-		C8FE02562177F24C00D1FD2E /* DatetimeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE020B2177F24C00D1FD2E /* DatetimeWrapper.m */; };
-		C8FE02572177F24C00D1FD2E /* MyKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE020D2177F24C00D1FD2E /* MyKind.m */; };
-		C8FE02582177F24C00D1FD2E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE020E2177F24C00D1FD2E /* Dog.m */; };
-		C8FE02592177F24C00D1FD2E /* Goblinshark.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE020F2177F24C00D1FD2E /* Goblinshark.m */; };
-		C8FE025A2177F24C00D1FD2E /* Siamese.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02122177F24C00D1FD2E /* Siamese.m */; };
-		C8FE025B2177F24C00D1FD2E /* DoubleWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02132177F24C00D1FD2E /* DoubleWrapper.m */; };
-		C8FE025C2177F24C00D1FD2E /* Sawshark.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02162177F24C00D1FD2E /* Sawshark.m */; };
-		C8FE025D2177F24C00D1FD2E /* StringWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02172177F24C00D1FD2E /* StringWrapper.m */; };
-		C8FE025E2177F24C00D1FD2E /* Dictionarys.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE021D2177F24C00D1FD2E /* Dictionarys.m */; };
-		C8FE025F2177F24C00D1FD2E /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE021E2177F24C00D1FD2E /* Arrays.m */; };
-		C8FE02602177F24C00D1FD2E /* Inheritances.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE021F2177F24C00D1FD2E /* Inheritances.m */; };
-		C8FE02612177F24C00D1FD2E /* Polymorphisms.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02212177F24C00D1FD2E /* Polymorphisms.m */; };
-		C8FE02622177F24C00D1FD2E /* Flattencomplexs.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02222177F24C00D1FD2E /* Flattencomplexs.m */; };
-		C8FE02632177F24C00D1FD2E /* Readonlypropertys.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02232177F24C00D1FD2E /* Readonlypropertys.m */; };
-		C8FE02642177F24C00D1FD2E /* Primitives.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02242177F24C00D1FD2E /* Primitives.m */; };
-		C8FE02652177F24C00D1FD2E /* Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02252177F24C00D1FD2E /* Basics.m */; };
-		C8FE02662177F24C00D1FD2E /* Polymorphicrecursives.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE02292177F24C00D1FD2E /* Polymorphicrecursives.m */; };
-		C8FE02672177F24C00D1FD2E /* AutoRestComplexTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE022F2177F24C00D1FD2E /* AutoRestComplexTestService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,24 +85,111 @@
 		60AD79DAD29F9B0A1D2E70BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		890376FCA6AEF5FCE8A2DF47 /* Pods-AzureClientRuntime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureClientRuntime_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureClientRuntime_Tests/Pods-AzureClientRuntime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C19B6FFE1C5BBE9BFFE9324F /* Pods_AzureClientRuntime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureClientRuntime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89022BA21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_AutoRestComplexTestServiceService.m; sourceTree = "<group>"; };
+		C89022BC21910A8C00ECFF82 /* CLX_DictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_DictionaryWrapper.m; sourceTree = "<group>"; };
+		C89022BD21910A8C00ECFF82 /* CLX_SmartSalmon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_SmartSalmon.m; sourceTree = "<group>"; };
+		C89022BE21910A8C00ECFF82 /* CLX_MyDerivedType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_MyDerivedType.h; sourceTree = "<group>"; };
+		C89022BF21910A8C00ECFF82 /* CLX_DurationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_DurationWrapper.h; sourceTree = "<group>"; };
+		C89022C021910A8C00ECFF82 /* CLX_MyKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_MyKind.h; sourceTree = "<group>"; };
+		C89022C121910A8C00ECFF82 /* CLX_BooleanWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_BooleanWrapper.m; sourceTree = "<group>"; };
+		C89022C221910A8C00ECFF82 /* CLX_IntWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_IntWrapper.h; sourceTree = "<group>"; };
+		C89022C321910A8C00ECFF82 /* CLX_CMYKColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_CMYKColors.h; sourceTree = "<group>"; };
+		C89022C421910A8C00ECFF82 /* CLX_LongWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_LongWrapper.m; sourceTree = "<group>"; };
+		C89022C521910A8C00ECFF82 /* CLX_Goblinshark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Goblinshark.h; sourceTree = "<group>"; };
+		C89022C621910A8C00ECFF82 /* CLX_Cookiecuttershark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Cookiecuttershark.h; sourceTree = "<group>"; };
+		C89022C721910A8C00ECFF82 /* CLX_Sawshark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Sawshark.m; sourceTree = "<group>"; };
+		C89022C821910A8C00ECFF82 /* CLX_Shark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Shark.m; sourceTree = "<group>"; };
+		C89022C921910A8C00ECFF82 /* CLX_ByteWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_ByteWrapper.h; sourceTree = "<group>"; };
+		C89022CA21910A8C00ECFF82 /* CLX_Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Dog.h; sourceTree = "<group>"; };
+		C89022CB21910A8C00ECFF82 /* CLX_DateWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_DateWrapper.m; sourceTree = "<group>"; };
+		C89022CC21910A8C00ECFF82 /* CLX_ArrayWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_ArrayWrapper.m; sourceTree = "<group>"; };
+		C89022CD21910A8C00ECFF82 /* CLX_StringWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_StringWrapper.m; sourceTree = "<group>"; };
+		C89022CE21910A8C00ECFF82 /* CLX_Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Cat.m; sourceTree = "<group>"; };
+		C89022CF21910A8C00ECFF82 /* CLX_DoubleWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_DoubleWrapper.m; sourceTree = "<group>"; };
+		C89022D021910A8C00ECFF82 /* CLX_DatetimeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_DatetimeWrapper.h; sourceTree = "<group>"; };
+		C89022D121910A8C00ECFF82 /* CLX_Salmon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Salmon.h; sourceTree = "<group>"; };
+		C89022D221910A8C00ECFF82 /* CLX_MyBaseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_MyBaseType.h; sourceTree = "<group>"; };
+		C89022D321910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Datetimerfc1123Wrapper.m; sourceTree = "<group>"; };
+		C89022D421910A8C00ECFF82 /* CLX_Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Pet.m; sourceTree = "<group>"; };
+		C89022D521910A8C00ECFF82 /* CLX_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Error.h; sourceTree = "<group>"; };
+		C89022D621910A8C00ECFF82 /* CLX_Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Fish.h; sourceTree = "<group>"; };
+		C89022D721910A8C00ECFF82 /* CLX_FloatWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_FloatWrapper.m; sourceTree = "<group>"; };
+		C89022D821910A8C00ECFF82 /* CLX_ReadonlyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_ReadonlyObj.m; sourceTree = "<group>"; };
+		C89022D921910A8C00ECFF82 /* CLX_GoblinSharkColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_GoblinSharkColor.m; sourceTree = "<group>"; };
+		C89022DA21910A8C00ECFF82 /* CLX_Siamese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Siamese.m; sourceTree = "<group>"; };
+		C89022DB21910A8C00ECFF82 /* CLX_Basic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Basic.m; sourceTree = "<group>"; };
+		C89022DC21910A8C00ECFF82 /* CLX_MyDerivedType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_MyDerivedType.m; sourceTree = "<group>"; };
+		C89022DD21910A8C00ECFF82 /* CLX_SmartSalmon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_SmartSalmon.h; sourceTree = "<group>"; };
+		C89022DE21910A8C00ECFF82 /* CLX_DictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_DictionaryWrapper.h; sourceTree = "<group>"; };
+		C89022DF21910A8C00ECFF82 /* CLX_Sawshark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Sawshark.h; sourceTree = "<group>"; };
+		C89022E021910A8C00ECFF82 /* CLX_Cookiecuttershark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Cookiecuttershark.m; sourceTree = "<group>"; };
+		C89022E121910A8C00ECFF82 /* CLX_Goblinshark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Goblinshark.m; sourceTree = "<group>"; };
+		C89022E221910A8C00ECFF82 /* CLX_LongWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_LongWrapper.h; sourceTree = "<group>"; };
+		C89022E321910A8C00ECFF82 /* CLX_CMYKColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_CMYKColors.m; sourceTree = "<group>"; };
+		C89022E421910A8C00ECFF82 /* CLX_IntWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_IntWrapper.m; sourceTree = "<group>"; };
+		C89022E521910A8C00ECFF82 /* CLX_BooleanWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_BooleanWrapper.h; sourceTree = "<group>"; };
+		C89022E621910A8C00ECFF82 /* CLX_DurationWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_DurationWrapper.m; sourceTree = "<group>"; };
+		C89022E721910A8C00ECFF82 /* CLX_MyKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_MyKind.m; sourceTree = "<group>"; };
+		C89022E821910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Datetimerfc1123Wrapper.h; sourceTree = "<group>"; };
+		C89022E921910A8C00ECFF82 /* CLX_MyBaseType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_MyBaseType.m; sourceTree = "<group>"; };
+		C89022EA21910A8C00ECFF82 /* CLX_Salmon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Salmon.m; sourceTree = "<group>"; };
+		C89022EB21910A8C00ECFF82 /* CLX_DatetimeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_DatetimeWrapper.m; sourceTree = "<group>"; };
+		C89022EC21910A8C00ECFF82 /* CLX_DoubleWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_DoubleWrapper.h; sourceTree = "<group>"; };
+		C89022ED21910A8C00ECFF82 /* CLX_Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Cat.h; sourceTree = "<group>"; };
+		C89022EE21910A8C00ECFF82 /* CLX_ArrayWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_ArrayWrapper.h; sourceTree = "<group>"; };
+		C89022EF21910A8C00ECFF82 /* CLX_StringWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_StringWrapper.h; sourceTree = "<group>"; };
+		C89022F021910A8C00ECFF82 /* CLX_Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Dog.m; sourceTree = "<group>"; };
+		C89022F121910A8C00ECFF82 /* CLX_ByteWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_ByteWrapper.m; sourceTree = "<group>"; };
+		C89022F221910A8C00ECFF82 /* CLX_DateWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_DateWrapper.h; sourceTree = "<group>"; };
+		C89022F321910A8C00ECFF82 /* CLX_Shark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Shark.h; sourceTree = "<group>"; };
+		C89022F421910A8C00ECFF82 /* CLX_Basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Basic.h; sourceTree = "<group>"; };
+		C89022F521910A8C00ECFF82 /* CLX_Siamese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Siamese.h; sourceTree = "<group>"; };
+		C89022F621910A8C00ECFF82 /* CLX_GoblinSharkColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_GoblinSharkColor.h; sourceTree = "<group>"; };
+		C89022F721910A8C00ECFF82 /* CLX_ReadonlyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_ReadonlyObj.h; sourceTree = "<group>"; };
+		C89022F821910A8C00ECFF82 /* CLX_FloatWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_FloatWrapper.h; sourceTree = "<group>"; };
+		C89022F921910A8C00ECFF82 /* CLX_Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Fish.m; sourceTree = "<group>"; };
+		C89022FA21910A8C00ECFF82 /* CLX_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Error.m; sourceTree = "<group>"; };
+		C89022FB21910A8C00ECFF82 /* CLX_Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Pet.h; sourceTree = "<group>"; };
+		C89022FD21910A8C00ECFF82 /* CLX_Polymorphisms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Polymorphisms.h; sourceTree = "<group>"; };
+		C89022FE21910A8C00ECFF82 /* CLX_Inheritances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Inheritances.m; sourceTree = "<group>"; };
+		C89022FF21910A8C00ECFF82 /* CLX_Basics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Basics.m; sourceTree = "<group>"; };
+		C890230021910A8C00ECFF82 /* CLX_Flattencomplexs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Flattencomplexs.m; sourceTree = "<group>"; };
+		C890230121910A8C00ECFF82 /* CLX_Readonlypropertys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Readonlypropertys.h; sourceTree = "<group>"; };
+		C890230221910A8C00ECFF82 /* CLX_Polymorphicrecursives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Polymorphicrecursives.m; sourceTree = "<group>"; };
+		C890230321910A8C00ECFF82 /* CLX_Dictionarys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Dictionarys.m; sourceTree = "<group>"; };
+		C890230421910A8C00ECFF82 /* CLX_Primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Primitives.h; sourceTree = "<group>"; };
+		C890230521910A8C00ECFF82 /* CLX_Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Arrays.m; sourceTree = "<group>"; };
+		C890230621910A8C00ECFF82 /* CLX_Polymorphisms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Polymorphisms.m; sourceTree = "<group>"; };
+		C890230721910A8C00ECFF82 /* CLX_Basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Basics.h; sourceTree = "<group>"; };
+		C890230821910A8C00ECFF82 /* CLX_Inheritances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Inheritances.h; sourceTree = "<group>"; };
+		C890230921910A8C00ECFF82 /* CLX_Readonlypropertys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Readonlypropertys.m; sourceTree = "<group>"; };
+		C890230A21910A8C00ECFF82 /* CLX_Flattencomplexs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Flattencomplexs.h; sourceTree = "<group>"; };
+		C890230B21910A8C00ECFF82 /* CLX_Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Arrays.h; sourceTree = "<group>"; };
+		C890230C21910A8C00ECFF82 /* CLX_Primitives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_Primitives.m; sourceTree = "<group>"; };
+		C890230D21910A8C00ECFF82 /* CLX_Dictionarys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Dictionarys.h; sourceTree = "<group>"; };
+		C890230E21910A8C00ECFF82 /* CLX_Polymorphicrecursives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_Polymorphicrecursives.h; sourceTree = "<group>"; };
+		C890230F21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLX_AutoRestComplexTestServiceServiceTests.m; sourceTree = "<group>"; };
+		C890231021910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLX_AutoRestComplexTestServiceService.h; sourceTree = "<group>"; };
+		C890233D2191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FL_AutoRestSwaggerBATFileServiceServiceTests.m; sourceTree = "<group>"; };
+		C890233E2191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FL_AutoRestSwaggerBATFileServiceService.h; sourceTree = "<group>"; };
+		C89023402191143D00ECFF82 /* FL_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FL_Error.h; sourceTree = "<group>"; };
+		C89023412191143D00ECFF82 /* FL_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FL_Error.m; sourceTree = "<group>"; };
+		C89023432191143D00ECFF82 /* FL_Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FL_Files.m; sourceTree = "<group>"; };
+		C89023442191143D00ECFF82 /* FL_Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FL_Files.h; sourceTree = "<group>"; };
+		C89023452191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FL_AutoRestSwaggerBATFileServiceService.m; sourceTree = "<group>"; };
+		C890234B219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR_AutoRestSwaggerBATArrayServiceService.h; sourceTree = "<group>"; };
+		C890234D219115BA00ECFF82 /* ARR_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_Error.m; sourceTree = "<group>"; };
+		C890234E219115BA00ECFF82 /* ARR_Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR_Product.h; sourceTree = "<group>"; };
+		C890234F219115BA00ECFF82 /* ARR_FooEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_FooEnum.m; sourceTree = "<group>"; };
+		C8902350219115BA00ECFF82 /* ARR_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR_Error.h; sourceTree = "<group>"; };
+		C8902351219115BA00ECFF82 /* ARR_Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_Product.m; sourceTree = "<group>"; };
+		C8902352219115BA00ECFF82 /* ARR_FooEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR_FooEnum.h; sourceTree = "<group>"; };
+		C8902354219115BA00ECFF82 /* ARR_Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_Arrays.m; sourceTree = "<group>"; };
+		C8902355219115BA00ECFF82 /* ARR_Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR_Arrays.h; sourceTree = "<group>"; };
+		C8902356219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_AutoRestSwaggerBATArrayServiceServiceTests.m; sourceTree = "<group>"; };
+		C8902357219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR_AutoRestSwaggerBATArrayServiceService.m; sourceTree = "<group>"; };
 		C8FE01B52177F21000D1FD2E /* JsonCoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonCoderTests.m; sourceTree = "<group>"; };
 		C8FE01B62177F21000D1FD2E /* RequestHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelperTests.m; sourceTree = "<group>"; };
-		C8FE01BA2177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoRestSwaggerBATArrayService.m; sourceTree = "<group>"; };
-		C8FE01BB2177F24C00D1FD2E /* AutoRestSwaggerBATArrayServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoRestSwaggerBATArrayServiceTests.m; sourceTree = "<group>"; };
-		C8FE01BD2177F24C00D1FD2E /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
-		C8FE01BE2177F24C00D1FD2E /* FooEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooEnum.m; sourceTree = "<group>"; };
-		C8FE01BF2177F24C00D1FD2E /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
-		C8FE01C02177F24C00D1FD2E /* FooEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooEnum.h; sourceTree = "<group>"; };
-		C8FE01C22177F24C00D1FD2E /* Arrays1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays1.h; sourceTree = "<group>"; };
-		C8FE01C32177F24C00D1FD2E /* Arrays1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays1.m; sourceTree = "<group>"; };
-		C8FE01C42177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRestSwaggerBATArrayService.h; sourceTree = "<group>"; };
-		C8FE01C62177F24C00D1FD2E /* AutoRestSwaggerBATFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRestSwaggerBATFileService.h; sourceTree = "<group>"; };
-		C8FE01C82177F24C00D1FD2E /* Error1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error1.h; sourceTree = "<group>"; };
-		C8FE01C92177F24C00D1FD2E /* Error1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error1.m; sourceTree = "<group>"; };
-		C8FE01CB2177F24C00D1FD2E /* Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Files.m; sourceTree = "<group>"; };
-		C8FE01CC2177F24C00D1FD2E /* BodyFileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyFileTests.m; sourceTree = "<group>"; };
-		C8FE01CD2177F24C00D1FD2E /* Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Files.h; sourceTree = "<group>"; };
-		C8FE01CE2177F24C00D1FD2E /* AutoRestSwaggerBATFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoRestSwaggerBATFileService.m; sourceTree = "<group>"; };
 		C8FE01D02177F24C00D1FD2E /* ComplexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexModel.h; sourceTree = "<group>"; };
 		C8FE01D12177F24C00D1FD2E /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		C8FE01D22177F24C00D1FD2E /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
@@ -110,91 +198,6 @@
 		C8FE01D52177F24C00D1FD2E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		C8FE01D62177F24C00D1FD2E /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		C8FE01D72177F24C00D1FD2E /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
-		C8FE01D92177F24C00D1FD2E /* AutoRestComplexTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoRestComplexTestService.h; sourceTree = "<group>"; };
-		C8FE01DA2177F24C00D1FD2E /* BodyComplexTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyComplexTests.m; sourceTree = "<group>"; };
-		C8FE01DC2177F24C00D1FD2E /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
-		C8FE01DD2177F24C00D1FD2E /* ReadonlyObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadonlyObj.m; sourceTree = "<group>"; };
-		C8FE01DE2177F24C00D1FD2E /* IntWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntWrapper.m; sourceTree = "<group>"; };
-		C8FE01DF2177F24C00D1FD2E /* CMYKColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMYKColors.m; sourceTree = "<group>"; };
-		C8FE01E02177F24C00D1FD2E /* Datetimerfc1123Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datetimerfc1123Wrapper.m; sourceTree = "<group>"; };
-		C8FE01E12177F24C00D1FD2E /* DictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryWrapper.h; sourceTree = "<group>"; };
-		C8FE01E22177F24C00D1FD2E /* Basic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Basic.m; sourceTree = "<group>"; };
-		C8FE01E32177F24C00D1FD2E /* Shark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shark.m; sourceTree = "<group>"; };
-		C8FE01E42177F24C00D1FD2E /* DurationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DurationWrapper.h; sourceTree = "<group>"; };
-		C8FE01E52177F24C00D1FD2E /* Salmon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Salmon.h; sourceTree = "<group>"; };
-		C8FE01E62177F24C00D1FD2E /* Cookiecuttershark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cookiecuttershark.m; sourceTree = "<group>"; };
-		C8FE01E72177F24C00D1FD2E /* ByteWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteWrapper.h; sourceTree = "<group>"; };
-		C8FE01E82177F24C00D1FD2E /* DateWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateWrapper.m; sourceTree = "<group>"; };
-		C8FE01E92177F24C00D1FD2E /* MyDerivedType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDerivedType.m; sourceTree = "<group>"; };
-		C8FE01EA2177F24C00D1FD2E /* GoblinSharkColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoblinSharkColor.m; sourceTree = "<group>"; };
-		C8FE01EB2177F24C00D1FD2E /* Siamese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Siamese.h; sourceTree = "<group>"; };
-		C8FE01EC2177F24C00D1FD2E /* LongWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongWrapper.m; sourceTree = "<group>"; };
-		C8FE01ED2177F24C00D1FD2E /* ArrayWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayWrapper.m; sourceTree = "<group>"; };
-		C8FE01EE2177F24C00D1FD2E /* Goblinshark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goblinshark.h; sourceTree = "<group>"; };
-		C8FE01EF2177F24C00D1FD2E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
-		C8FE01F02177F24C00D1FD2E /* MyKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKind.h; sourceTree = "<group>"; };
-		C8FE01F12177F24C00D1FD2E /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
-		C8FE01F22177F24C00D1FD2E /* DatetimeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatetimeWrapper.h; sourceTree = "<group>"; };
-		C8FE01F32177F24C00D1FD2E /* BooleanWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanWrapper.m; sourceTree = "<group>"; };
-		C8FE01F42177F24C00D1FD2E /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
-		C8FE01F52177F24C00D1FD2E /* SmartSalmon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSalmon.m; sourceTree = "<group>"; };
-		C8FE01F62177F24C00D1FD2E /* MyBaseType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseType.m; sourceTree = "<group>"; };
-		C8FE01F72177F24C00D1FD2E /* StringWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringWrapper.h; sourceTree = "<group>"; };
-		C8FE01F82177F24C00D1FD2E /* Sawshark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sawshark.h; sourceTree = "<group>"; };
-		C8FE01F92177F24C00D1FD2E /* FloatWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatWrapper.m; sourceTree = "<group>"; };
-		C8FE01FA2177F24C00D1FD2E /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
-		C8FE01FB2177F24C00D1FD2E /* DoubleWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleWrapper.h; sourceTree = "<group>"; };
-		C8FE01FC2177F24C00D1FD2E /* Basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basic.h; sourceTree = "<group>"; };
-		C8FE01FD2177F24C00D1FD2E /* DictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryWrapper.m; sourceTree = "<group>"; };
-		C8FE01FE2177F24C00D1FD2E /* Datetimerfc1123Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datetimerfc1123Wrapper.h; sourceTree = "<group>"; };
-		C8FE01FF2177F24C00D1FD2E /* CMYKColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMYKColors.h; sourceTree = "<group>"; };
-		C8FE02002177F24C00D1FD2E /* IntWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntWrapper.h; sourceTree = "<group>"; };
-		C8FE02012177F24C00D1FD2E /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
-		C8FE02022177F24C00D1FD2E /* ReadonlyObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadonlyObj.h; sourceTree = "<group>"; };
-		C8FE02032177F24C00D1FD2E /* GoblinSharkColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoblinSharkColor.h; sourceTree = "<group>"; };
-		C8FE02042177F24C00D1FD2E /* ByteWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteWrapper.m; sourceTree = "<group>"; };
-		C8FE02052177F24C00D1FD2E /* DateWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateWrapper.h; sourceTree = "<group>"; };
-		C8FE02062177F24C00D1FD2E /* MyDerivedType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDerivedType.h; sourceTree = "<group>"; };
-		C8FE02072177F24C00D1FD2E /* Salmon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salmon.m; sourceTree = "<group>"; };
-		C8FE02082177F24C00D1FD2E /* Cookiecuttershark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cookiecuttershark.h; sourceTree = "<group>"; };
-		C8FE02092177F24C00D1FD2E /* DurationWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DurationWrapper.m; sourceTree = "<group>"; };
-		C8FE020A2177F24C00D1FD2E /* Shark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shark.h; sourceTree = "<group>"; };
-		C8FE020B2177F24C00D1FD2E /* DatetimeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatetimeWrapper.m; sourceTree = "<group>"; };
-		C8FE020C2177F24C00D1FD2E /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
-		C8FE020D2177F24C00D1FD2E /* MyKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKind.m; sourceTree = "<group>"; };
-		C8FE020E2177F24C00D1FD2E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
-		C8FE020F2177F24C00D1FD2E /* Goblinshark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goblinshark.m; sourceTree = "<group>"; };
-		C8FE02102177F24C00D1FD2E /* ArrayWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayWrapper.h; sourceTree = "<group>"; };
-		C8FE02112177F24C00D1FD2E /* LongWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongWrapper.h; sourceTree = "<group>"; };
-		C8FE02122177F24C00D1FD2E /* Siamese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Siamese.m; sourceTree = "<group>"; };
-		C8FE02132177F24C00D1FD2E /* DoubleWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleWrapper.m; sourceTree = "<group>"; };
-		C8FE02142177F24C00D1FD2E /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
-		C8FE02152177F24C00D1FD2E /* FloatWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatWrapper.h; sourceTree = "<group>"; };
-		C8FE02162177F24C00D1FD2E /* Sawshark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sawshark.m; sourceTree = "<group>"; };
-		C8FE02172177F24C00D1FD2E /* StringWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringWrapper.m; sourceTree = "<group>"; };
-		C8FE02182177F24C00D1FD2E /* MyBaseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseType.h; sourceTree = "<group>"; };
-		C8FE02192177F24C00D1FD2E /* SmartSalmon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSalmon.h; sourceTree = "<group>"; };
-		C8FE021A2177F24C00D1FD2E /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
-		C8FE021B2177F24C00D1FD2E /* BooleanWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanWrapper.h; sourceTree = "<group>"; };
-		C8FE021D2177F24C00D1FD2E /* Dictionarys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dictionarys.m; sourceTree = "<group>"; };
-		C8FE021E2177F24C00D1FD2E /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
-		C8FE021F2177F24C00D1FD2E /* Inheritances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inheritances.m; sourceTree = "<group>"; };
-		C8FE02202177F24C00D1FD2E /* Polymorphicrecursives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polymorphicrecursives.h; sourceTree = "<group>"; };
-		C8FE02212177F24C00D1FD2E /* Polymorphisms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polymorphisms.m; sourceTree = "<group>"; };
-		C8FE02222177F24C00D1FD2E /* Flattencomplexs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flattencomplexs.m; sourceTree = "<group>"; };
-		C8FE02232177F24C00D1FD2E /* Readonlypropertys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Readonlypropertys.m; sourceTree = "<group>"; };
-		C8FE02242177F24C00D1FD2E /* Primitives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Primitives.m; sourceTree = "<group>"; };
-		C8FE02252177F24C00D1FD2E /* Basics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Basics.m; sourceTree = "<group>"; };
-		C8FE02262177F24C00D1FD2E /* Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays.h; sourceTree = "<group>"; };
-		C8FE02272177F24C00D1FD2E /* Dictionarys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionarys.h; sourceTree = "<group>"; };
-		C8FE02282177F24C00D1FD2E /* Polymorphisms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polymorphisms.h; sourceTree = "<group>"; };
-		C8FE02292177F24C00D1FD2E /* Polymorphicrecursives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polymorphicrecursives.m; sourceTree = "<group>"; };
-		C8FE022A2177F24C00D1FD2E /* Inheritances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inheritances.h; sourceTree = "<group>"; };
-		C8FE022B2177F24C00D1FD2E /* Basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basics.h; sourceTree = "<group>"; };
-		C8FE022C2177F24C00D1FD2E /* Primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primitives.h; sourceTree = "<group>"; };
-		C8FE022D2177F24C00D1FD2E /* Readonlypropertys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Readonlypropertys.h; sourceTree = "<group>"; };
-		C8FE022E2177F24C00D1FD2E /* Flattencomplexs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattencomplexs.h; sourceTree = "<group>"; };
-		C8FE022F2177F24C00D1FD2E /* AutoRestComplexTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoRestComplexTestService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,9 +246,9 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01B92177F24C00D1FD2E /* body-array */,
-				C8FE01D82177F24C00D1FD2E /* body-complex */,
-				C8FE01C52177F24C00D1FD2E /* body-file */,
+				C890234A219115BA00ECFF82 /* arr */,
+				C890233C2191143D00ECFF82 /* fl */,
+				C89022B921910A8C00ECFF82 /* clx */,
 				C8FE01CF2177F24C00D1FD2E /* Models */,
 				C8FE01B52177F21000D1FD2E /* JsonCoderTests.m */,
 				C8FE01B62177F21000D1FD2E /* RequestHelperTests.m */,
@@ -283,64 +286,174 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C8FE01B92177F24C00D1FD2E /* body-array */ = {
+		C89022B921910A8C00ECFF82 /* clx */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01BA2177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.m */,
-				C8FE01BB2177F24C00D1FD2E /* AutoRestSwaggerBATArrayServiceTests.m */,
-				C8FE01BC2177F24C00D1FD2E /* Models */,
-				C8FE01C12177F24C00D1FD2E /* Operations */,
-				C8FE01C42177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.h */,
+				C890231021910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.h */,
+				C89022BA21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.m */,
+				C890230F21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m */,
+				C89022BB21910A8C00ECFF82 /* Models */,
+				C89022FC21910A8C00ECFF82 /* Operations */,
 			);
-			path = "body-array";
+			path = clx;
 			sourceTree = "<group>";
 		};
-		C8FE01BC2177F24C00D1FD2E /* Models */ = {
+		C89022BB21910A8C00ECFF82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01BD2177F24C00D1FD2E /* Product.h */,
-				C8FE01BE2177F24C00D1FD2E /* FooEnum.m */,
-				C8FE01BF2177F24C00D1FD2E /* Product.m */,
-				C8FE01C02177F24C00D1FD2E /* FooEnum.h */,
+				C89022BC21910A8C00ECFF82 /* CLX_DictionaryWrapper.m */,
+				C89022BD21910A8C00ECFF82 /* CLX_SmartSalmon.m */,
+				C89022BE21910A8C00ECFF82 /* CLX_MyDerivedType.h */,
+				C89022BF21910A8C00ECFF82 /* CLX_DurationWrapper.h */,
+				C89022C021910A8C00ECFF82 /* CLX_MyKind.h */,
+				C89022C121910A8C00ECFF82 /* CLX_BooleanWrapper.m */,
+				C89022C221910A8C00ECFF82 /* CLX_IntWrapper.h */,
+				C89022C321910A8C00ECFF82 /* CLX_CMYKColors.h */,
+				C89022C421910A8C00ECFF82 /* CLX_LongWrapper.m */,
+				C89022C521910A8C00ECFF82 /* CLX_Goblinshark.h */,
+				C89022C621910A8C00ECFF82 /* CLX_Cookiecuttershark.h */,
+				C89022C721910A8C00ECFF82 /* CLX_Sawshark.m */,
+				C89022C821910A8C00ECFF82 /* CLX_Shark.m */,
+				C89022C921910A8C00ECFF82 /* CLX_ByteWrapper.h */,
+				C89022CA21910A8C00ECFF82 /* CLX_Dog.h */,
+				C89022CB21910A8C00ECFF82 /* CLX_DateWrapper.m */,
+				C89022CC21910A8C00ECFF82 /* CLX_ArrayWrapper.m */,
+				C89022CD21910A8C00ECFF82 /* CLX_StringWrapper.m */,
+				C89022CE21910A8C00ECFF82 /* CLX_Cat.m */,
+				C89022CF21910A8C00ECFF82 /* CLX_DoubleWrapper.m */,
+				C89022D021910A8C00ECFF82 /* CLX_DatetimeWrapper.h */,
+				C89022D121910A8C00ECFF82 /* CLX_Salmon.h */,
+				C89022D221910A8C00ECFF82 /* CLX_MyBaseType.h */,
+				C89022D321910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.m */,
+				C89022D421910A8C00ECFF82 /* CLX_Pet.m */,
+				C89022D521910A8C00ECFF82 /* CLX_Error.h */,
+				C89022D621910A8C00ECFF82 /* CLX_Fish.h */,
+				C89022D721910A8C00ECFF82 /* CLX_FloatWrapper.m */,
+				C89022D821910A8C00ECFF82 /* CLX_ReadonlyObj.m */,
+				C89022D921910A8C00ECFF82 /* CLX_GoblinSharkColor.m */,
+				C89022DA21910A8C00ECFF82 /* CLX_Siamese.m */,
+				C89022DB21910A8C00ECFF82 /* CLX_Basic.m */,
+				C89022DC21910A8C00ECFF82 /* CLX_MyDerivedType.m */,
+				C89022DD21910A8C00ECFF82 /* CLX_SmartSalmon.h */,
+				C89022DE21910A8C00ECFF82 /* CLX_DictionaryWrapper.h */,
+				C89022DF21910A8C00ECFF82 /* CLX_Sawshark.h */,
+				C89022E021910A8C00ECFF82 /* CLX_Cookiecuttershark.m */,
+				C89022E121910A8C00ECFF82 /* CLX_Goblinshark.m */,
+				C89022E221910A8C00ECFF82 /* CLX_LongWrapper.h */,
+				C89022E321910A8C00ECFF82 /* CLX_CMYKColors.m */,
+				C89022E421910A8C00ECFF82 /* CLX_IntWrapper.m */,
+				C89022E521910A8C00ECFF82 /* CLX_BooleanWrapper.h */,
+				C89022E621910A8C00ECFF82 /* CLX_DurationWrapper.m */,
+				C89022E721910A8C00ECFF82 /* CLX_MyKind.m */,
+				C89022E821910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.h */,
+				C89022E921910A8C00ECFF82 /* CLX_MyBaseType.m */,
+				C89022EA21910A8C00ECFF82 /* CLX_Salmon.m */,
+				C89022EB21910A8C00ECFF82 /* CLX_DatetimeWrapper.m */,
+				C89022EC21910A8C00ECFF82 /* CLX_DoubleWrapper.h */,
+				C89022ED21910A8C00ECFF82 /* CLX_Cat.h */,
+				C89022EE21910A8C00ECFF82 /* CLX_ArrayWrapper.h */,
+				C89022EF21910A8C00ECFF82 /* CLX_StringWrapper.h */,
+				C89022F021910A8C00ECFF82 /* CLX_Dog.m */,
+				C89022F121910A8C00ECFF82 /* CLX_ByteWrapper.m */,
+				C89022F221910A8C00ECFF82 /* CLX_DateWrapper.h */,
+				C89022F321910A8C00ECFF82 /* CLX_Shark.h */,
+				C89022F421910A8C00ECFF82 /* CLX_Basic.h */,
+				C89022F521910A8C00ECFF82 /* CLX_Siamese.h */,
+				C89022F621910A8C00ECFF82 /* CLX_GoblinSharkColor.h */,
+				C89022F721910A8C00ECFF82 /* CLX_ReadonlyObj.h */,
+				C89022F821910A8C00ECFF82 /* CLX_FloatWrapper.h */,
+				C89022F921910A8C00ECFF82 /* CLX_Fish.m */,
+				C89022FA21910A8C00ECFF82 /* CLX_Error.m */,
+				C89022FB21910A8C00ECFF82 /* CLX_Pet.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C8FE01C12177F24C00D1FD2E /* Operations */ = {
+		C89022FC21910A8C00ECFF82 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01C22177F24C00D1FD2E /* Arrays1.h */,
-				C8FE01C32177F24C00D1FD2E /* Arrays1.m */,
+				C89022FD21910A8C00ECFF82 /* CLX_Polymorphisms.h */,
+				C89022FE21910A8C00ECFF82 /* CLX_Inheritances.m */,
+				C89022FF21910A8C00ECFF82 /* CLX_Basics.m */,
+				C890230021910A8C00ECFF82 /* CLX_Flattencomplexs.m */,
+				C890230121910A8C00ECFF82 /* CLX_Readonlypropertys.h */,
+				C890230221910A8C00ECFF82 /* CLX_Polymorphicrecursives.m */,
+				C890230321910A8C00ECFF82 /* CLX_Dictionarys.m */,
+				C890230421910A8C00ECFF82 /* CLX_Primitives.h */,
+				C890230521910A8C00ECFF82 /* CLX_Arrays.m */,
+				C890230621910A8C00ECFF82 /* CLX_Polymorphisms.m */,
+				C890230721910A8C00ECFF82 /* CLX_Basics.h */,
+				C890230821910A8C00ECFF82 /* CLX_Inheritances.h */,
+				C890230921910A8C00ECFF82 /* CLX_Readonlypropertys.m */,
+				C890230A21910A8C00ECFF82 /* CLX_Flattencomplexs.h */,
+				C890230B21910A8C00ECFF82 /* CLX_Arrays.h */,
+				C890230C21910A8C00ECFF82 /* CLX_Primitives.m */,
+				C890230D21910A8C00ECFF82 /* CLX_Dictionarys.h */,
+				C890230E21910A8C00ECFF82 /* CLX_Polymorphicrecursives.h */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
 		};
-		C8FE01C52177F24C00D1FD2E /* body-file */ = {
+		C890233C2191143D00ECFF82 /* fl */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01C62177F24C00D1FD2E /* AutoRestSwaggerBATFileService.h */,
-				C8FE01C72177F24C00D1FD2E /* Models */,
-				C8FE01CA2177F24C00D1FD2E /* Operations */,
-				C8FE01CE2177F24C00D1FD2E /* AutoRestSwaggerBATFileService.m */,
+				C890233D2191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceServiceTests.m */,
+				C890233E2191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.h */,
+				C890233F2191143D00ECFF82 /* Models */,
+				C89023422191143D00ECFF82 /* Operations */,
+				C89023452191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.m */,
 			);
-			path = "body-file";
+			path = fl;
 			sourceTree = "<group>";
 		};
-		C8FE01C72177F24C00D1FD2E /* Models */ = {
+		C890233F2191143D00ECFF82 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01C82177F24C00D1FD2E /* Error1.h */,
-				C8FE01C92177F24C00D1FD2E /* Error1.m */,
+				C89023402191143D00ECFF82 /* FL_Error.h */,
+				C89023412191143D00ECFF82 /* FL_Error.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C8FE01CA2177F24C00D1FD2E /* Operations */ = {
+		C89023422191143D00ECFF82 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE01CB2177F24C00D1FD2E /* Files.m */,
-				C8FE01CC2177F24C00D1FD2E /* BodyFileTests.m */,
-				C8FE01CD2177F24C00D1FD2E /* Files.h */,
+				C89023432191143D00ECFF82 /* FL_Files.m */,
+				C89023442191143D00ECFF82 /* FL_Files.h */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		C890234A219115BA00ECFF82 /* arr */ = {
+			isa = PBXGroup;
+			children = (
+				C890234B219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.h */,
+				C8902357219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.m */,
+				C8902356219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceServiceTests.m */,
+				C890234C219115BA00ECFF82 /* Models */,
+				C8902353219115BA00ECFF82 /* Operations */,
+			);
+			path = arr;
+			sourceTree = "<group>";
+		};
+		C890234C219115BA00ECFF82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C890234D219115BA00ECFF82 /* ARR_Error.m */,
+				C890234E219115BA00ECFF82 /* ARR_Product.h */,
+				C890234F219115BA00ECFF82 /* ARR_FooEnum.m */,
+				C8902350219115BA00ECFF82 /* ARR_Error.h */,
+				C8902351219115BA00ECFF82 /* ARR_Product.m */,
+				C8902352219115BA00ECFF82 /* ARR_FooEnum.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8902353219115BA00ECFF82 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				C8902354219115BA00ECFF82 /* ARR_Arrays.m */,
+				C8902355219115BA00ECFF82 /* ARR_Arrays.h */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -358,114 +471,6 @@
 				C8FE01D72177F24C00D1FD2E /* SimpleModel.m */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C8FE01D82177F24C00D1FD2E /* body-complex */ = {
-			isa = PBXGroup;
-			children = (
-				C8FE01D92177F24C00D1FD2E /* AutoRestComplexTestService.h */,
-				C8FE01DA2177F24C00D1FD2E /* BodyComplexTests.m */,
-				C8FE01DB2177F24C00D1FD2E /* Models */,
-				C8FE021C2177F24C00D1FD2E /* Operations */,
-				C8FE022F2177F24C00D1FD2E /* AutoRestComplexTestService.m */,
-			);
-			path = "body-complex";
-			sourceTree = "<group>";
-		};
-		C8FE01DB2177F24C00D1FD2E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C8FE01DC2177F24C00D1FD2E /* Error.h */,
-				C8FE01DD2177F24C00D1FD2E /* ReadonlyObj.m */,
-				C8FE01DE2177F24C00D1FD2E /* IntWrapper.m */,
-				C8FE01DF2177F24C00D1FD2E /* CMYKColors.m */,
-				C8FE01E02177F24C00D1FD2E /* Datetimerfc1123Wrapper.m */,
-				C8FE01E12177F24C00D1FD2E /* DictionaryWrapper.h */,
-				C8FE01E22177F24C00D1FD2E /* Basic.m */,
-				C8FE01E32177F24C00D1FD2E /* Shark.m */,
-				C8FE01E42177F24C00D1FD2E /* DurationWrapper.h */,
-				C8FE01E52177F24C00D1FD2E /* Salmon.h */,
-				C8FE01E62177F24C00D1FD2E /* Cookiecuttershark.m */,
-				C8FE01E72177F24C00D1FD2E /* ByteWrapper.h */,
-				C8FE01E82177F24C00D1FD2E /* DateWrapper.m */,
-				C8FE01E92177F24C00D1FD2E /* MyDerivedType.m */,
-				C8FE01EA2177F24C00D1FD2E /* GoblinSharkColor.m */,
-				C8FE01EB2177F24C00D1FD2E /* Siamese.h */,
-				C8FE01EC2177F24C00D1FD2E /* LongWrapper.m */,
-				C8FE01ED2177F24C00D1FD2E /* ArrayWrapper.m */,
-				C8FE01EE2177F24C00D1FD2E /* Goblinshark.h */,
-				C8FE01EF2177F24C00D1FD2E /* Dog.h */,
-				C8FE01F02177F24C00D1FD2E /* MyKind.h */,
-				C8FE01F12177F24C00D1FD2E /* Cat.m */,
-				C8FE01F22177F24C00D1FD2E /* DatetimeWrapper.h */,
-				C8FE01F32177F24C00D1FD2E /* BooleanWrapper.m */,
-				C8FE01F42177F24C00D1FD2E /* Fish.m */,
-				C8FE01F52177F24C00D1FD2E /* SmartSalmon.m */,
-				C8FE01F62177F24C00D1FD2E /* MyBaseType.m */,
-				C8FE01F72177F24C00D1FD2E /* StringWrapper.h */,
-				C8FE01F82177F24C00D1FD2E /* Sawshark.h */,
-				C8FE01F92177F24C00D1FD2E /* FloatWrapper.m */,
-				C8FE01FA2177F24C00D1FD2E /* Pet.m */,
-				C8FE01FB2177F24C00D1FD2E /* DoubleWrapper.h */,
-				C8FE01FC2177F24C00D1FD2E /* Basic.h */,
-				C8FE01FD2177F24C00D1FD2E /* DictionaryWrapper.m */,
-				C8FE01FE2177F24C00D1FD2E /* Datetimerfc1123Wrapper.h */,
-				C8FE01FF2177F24C00D1FD2E /* CMYKColors.h */,
-				C8FE02002177F24C00D1FD2E /* IntWrapper.h */,
-				C8FE02012177F24C00D1FD2E /* Error.m */,
-				C8FE02022177F24C00D1FD2E /* ReadonlyObj.h */,
-				C8FE02032177F24C00D1FD2E /* GoblinSharkColor.h */,
-				C8FE02042177F24C00D1FD2E /* ByteWrapper.m */,
-				C8FE02052177F24C00D1FD2E /* DateWrapper.h */,
-				C8FE02062177F24C00D1FD2E /* MyDerivedType.h */,
-				C8FE02072177F24C00D1FD2E /* Salmon.m */,
-				C8FE02082177F24C00D1FD2E /* Cookiecuttershark.h */,
-				C8FE02092177F24C00D1FD2E /* DurationWrapper.m */,
-				C8FE020A2177F24C00D1FD2E /* Shark.h */,
-				C8FE020B2177F24C00D1FD2E /* DatetimeWrapper.m */,
-				C8FE020C2177F24C00D1FD2E /* Cat.h */,
-				C8FE020D2177F24C00D1FD2E /* MyKind.m */,
-				C8FE020E2177F24C00D1FD2E /* Dog.m */,
-				C8FE020F2177F24C00D1FD2E /* Goblinshark.m */,
-				C8FE02102177F24C00D1FD2E /* ArrayWrapper.h */,
-				C8FE02112177F24C00D1FD2E /* LongWrapper.h */,
-				C8FE02122177F24C00D1FD2E /* Siamese.m */,
-				C8FE02132177F24C00D1FD2E /* DoubleWrapper.m */,
-				C8FE02142177F24C00D1FD2E /* Pet.h */,
-				C8FE02152177F24C00D1FD2E /* FloatWrapper.h */,
-				C8FE02162177F24C00D1FD2E /* Sawshark.m */,
-				C8FE02172177F24C00D1FD2E /* StringWrapper.m */,
-				C8FE02182177F24C00D1FD2E /* MyBaseType.h */,
-				C8FE02192177F24C00D1FD2E /* SmartSalmon.h */,
-				C8FE021A2177F24C00D1FD2E /* Fish.h */,
-				C8FE021B2177F24C00D1FD2E /* BooleanWrapper.h */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C8FE021C2177F24C00D1FD2E /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				C8FE021D2177F24C00D1FD2E /* Dictionarys.m */,
-				C8FE021E2177F24C00D1FD2E /* Arrays.m */,
-				C8FE021F2177F24C00D1FD2E /* Inheritances.m */,
-				C8FE02202177F24C00D1FD2E /* Polymorphicrecursives.h */,
-				C8FE02212177F24C00D1FD2E /* Polymorphisms.m */,
-				C8FE02222177F24C00D1FD2E /* Flattencomplexs.m */,
-				C8FE02232177F24C00D1FD2E /* Readonlypropertys.m */,
-				C8FE02242177F24C00D1FD2E /* Primitives.m */,
-				C8FE02252177F24C00D1FD2E /* Basics.m */,
-				C8FE02262177F24C00D1FD2E /* Arrays.h */,
-				C8FE02272177F24C00D1FD2E /* Dictionarys.h */,
-				C8FE02282177F24C00D1FD2E /* Polymorphisms.h */,
-				C8FE02292177F24C00D1FD2E /* Polymorphicrecursives.m */,
-				C8FE022A2177F24C00D1FD2E /* Inheritances.h */,
-				C8FE022B2177F24C00D1FD2E /* Basics.h */,
-				C8FE022C2177F24C00D1FD2E /* Primitives.h */,
-				C8FE022D2177F24C00D1FD2E /* Readonlypropertys.h */,
-				C8FE022E2177F24C00D1FD2E /* Flattencomplexs.h */,
-			);
-			path = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,64 +586,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FE024C2177F24C00D1FD2E /* Fish.m in Sources */,
+				C890233921910A8C00ECFF82 /* CLX_Readonlypropertys.m in Sources */,
+				C890231421910A8C00ECFF82 /* CLX_BooleanWrapper.m in Sources */,
+				C890232321910A8C00ECFF82 /* CLX_Basic.m in Sources */,
+				C890231121910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceService.m in Sources */,
 				C8FE023A2177F24C00D1FD2E /* Note.m in Sources */,
-				C8FE02622177F24C00D1FD2E /* Flattencomplexs.m in Sources */,
-				C8FE02362177F24C00D1FD2E /* Files.m in Sources */,
-				C8FE02552177F24C00D1FD2E /* DurationWrapper.m in Sources */,
-				C8FE02642177F24C00D1FD2E /* Primitives.m in Sources */,
-				C8FE02472177F24C00D1FD2E /* GoblinSharkColor.m in Sources */,
-				C8FE02672177F24C00D1FD2E /* AutoRestComplexTestService.m in Sources */,
-				C8FE024A2177F24C00D1FD2E /* Cat.m in Sources */,
-				C8FE02652177F24C00D1FD2E /* Basics.m in Sources */,
+				C890231621910A8C00ECFF82 /* CLX_Sawshark.m in Sources */,
+				C890231921910A8C00ECFF82 /* CLX_ArrayWrapper.m in Sources */,
+				C89023492191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceService.m in Sources */,
+				C890232F21910A8C00ECFF82 /* CLX_ByteWrapper.m in Sources */,
+				C890232D21910A8C00ECFF82 /* CLX_DatetimeWrapper.m in Sources */,
+				C8902358219115BA00ECFF82 /* ARR_Error.m in Sources */,
+				C890233221910A8C00ECFF82 /* CLX_Inheritances.m in Sources */,
+				C890232721910A8C00ECFF82 /* CLX_CMYKColors.m in Sources */,
+				C890231B21910A8C00ECFF82 /* CLX_Cat.m in Sources */,
+				C890233321910A8C00ECFF82 /* CLX_Basics.m in Sources */,
+				C890233A21910A8C00ECFF82 /* CLX_Primitives.m in Sources */,
+				C890233721910A8C00ECFF82 /* CLX_Arrays.m in Sources */,
+				C890231721910A8C00ECFF82 /* CLX_Shark.m in Sources */,
+				C8902359219115BA00ECFF82 /* ARR_FooEnum.m in Sources */,
+				C890232521910A8C00ECFF82 /* CLX_Cookiecuttershark.m in Sources */,
+				C89023482191143D00ECFF82 /* FL_Files.m in Sources */,
+				C890233521910A8C00ECFF82 /* CLX_Polymorphicrecursives.m in Sources */,
+				C890232121910A8C00ECFF82 /* CLX_GoblinSharkColor.m in Sources */,
 				C8FE023C2177F24C00D1FD2E /* SimpleModel.m in Sources */,
-				C8FE02632177F24C00D1FD2E /* Readonlypropertys.m in Sources */,
-				C8FE02432177F24C00D1FD2E /* Shark.m in Sources */,
-				C8FE02402177F24C00D1FD2E /* CMYKColors.m in Sources */,
-				C8FE02462177F24C00D1FD2E /* MyDerivedType.m in Sources */,
-				C8FE02322177F24C00D1FD2E /* FooEnum.m in Sources */,
-				C8FE023E2177F24C00D1FD2E /* ReadonlyObj.m in Sources */,
-				C8FE02492177F24C00D1FD2E /* ArrayWrapper.m in Sources */,
-				C8FE02382177F24C00D1FD2E /* AutoRestSwaggerBATFileService.m in Sources */,
-				C8FE02602177F24C00D1FD2E /* Inheritances.m in Sources */,
-				C8FE02562177F24C00D1FD2E /* DatetimeWrapper.m in Sources */,
-				C8FE025C2177F24C00D1FD2E /* Sawshark.m in Sources */,
 				C8FE023B2177F24C00D1FD2E /* ComplexModel.m in Sources */,
-				C8FE02502177F24C00D1FD2E /* Pet.m in Sources */,
-				C8FE025D2177F24C00D1FD2E /* StringWrapper.m in Sources */,
-				C8FE025A2177F24C00D1FD2E /* Siamese.m in Sources */,
-				C8FE023D2177F24C00D1FD2E /* BodyComplexTests.m in Sources */,
+				C890233021910A8C00ECFF82 /* CLX_Fish.m in Sources */,
+				C890233621910A8C00ECFF82 /* CLX_Dictionarys.m in Sources */,
+				C890232C21910A8C00ECFF82 /* CLX_Salmon.m in Sources */,
+				C890231321910A8C00ECFF82 /* CLX_SmartSalmon.m in Sources */,
 				C8FE01B72177F21000D1FD2E /* JsonCoderTests.m in Sources */,
-				C8FE025B2177F24C00D1FD2E /* DoubleWrapper.m in Sources */,
-				C8FE02442177F24C00D1FD2E /* Cookiecuttershark.m in Sources */,
-				C8FE02592177F24C00D1FD2E /* Goblinshark.m in Sources */,
-				C8FE023F2177F24C00D1FD2E /* IntWrapper.m in Sources */,
-				C8FE024F2177F24C00D1FD2E /* FloatWrapper.m in Sources */,
-				C8FE025F2177F24C00D1FD2E /* Arrays.m in Sources */,
-				C8FE024E2177F24C00D1FD2E /* MyBaseType.m in Sources */,
-				C8FE02512177F24C00D1FD2E /* DictionaryWrapper.m in Sources */,
-				C8FE02312177F24C00D1FD2E /* AutoRestSwaggerBATArrayServiceTests.m in Sources */,
-				C8FE02612177F24C00D1FD2E /* Polymorphisms.m in Sources */,
-				C8FE02332177F24C00D1FD2E /* Product.m in Sources */,
-				C8FE02452177F24C00D1FD2E /* DateWrapper.m in Sources */,
-				C8FE02532177F24C00D1FD2E /* ByteWrapper.m in Sources */,
+				C890235B219115BA00ECFF82 /* ARR_Arrays.m in Sources */,
+				C890233421910A8C00ECFF82 /* CLX_Flattencomplexs.m in Sources */,
+				C890232621910A8C00ECFF82 /* CLX_Goblinshark.m in Sources */,
+				C890233B21910A8C00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m in Sources */,
+				C890232021910A8C00ECFF82 /* CLX_ReadonlyObj.m in Sources */,
+				C890232221910A8C00ECFF82 /* CLX_Siamese.m in Sources */,
 				C8FE02392177F24C00D1FD2E /* BaseModel.m in Sources */,
 				C8FE01B82177F21000D1FD2E /* RequestHelperTests.m in Sources */,
-				C8FE02412177F24C00D1FD2E /* Datetimerfc1123Wrapper.m in Sources */,
-				C8FE025E2177F24C00D1FD2E /* Dictionarys.m in Sources */,
-				C8FE02302177F24C00D1FD2E /* AutoRestSwaggerBATArrayService.m in Sources */,
-				C8FE02542177F24C00D1FD2E /* Salmon.m in Sources */,
-				C8FE02572177F24C00D1FD2E /* MyKind.m in Sources */,
-				C8FE024D2177F24C00D1FD2E /* SmartSalmon.m in Sources */,
-				C8FE024B2177F24C00D1FD2E /* BooleanWrapper.m in Sources */,
-				C8FE02372177F24C00D1FD2E /* BodyFileTests.m in Sources */,
-				C8FE02422177F24C00D1FD2E /* Basic.m in Sources */,
-				C8FE02522177F24C00D1FD2E /* Error.m in Sources */,
-				C8FE02662177F24C00D1FD2E /* Polymorphicrecursives.m in Sources */,
-				C8FE02352177F24C00D1FD2E /* Error1.m in Sources */,
-				C8FE02342177F24C00D1FD2E /* Arrays1.m in Sources */,
-				C8FE02582177F24C00D1FD2E /* Dog.m in Sources */,
-				C8FE02482177F24C00D1FD2E /* LongWrapper.m in Sources */,
+				C890232421910A8C00ECFF82 /* CLX_MyDerivedType.m in Sources */,
+				C890232921910A8C00ECFF82 /* CLX_DurationWrapper.m in Sources */,
+				C890232821910A8C00ECFF82 /* CLX_IntWrapper.m in Sources */,
+				C89023472191143D00ECFF82 /* FL_Error.m in Sources */,
+				C890231D21910A8C00ECFF82 /* CLX_Datetimerfc1123Wrapper.m in Sources */,
+				C890231A21910A8C00ECFF82 /* CLX_StringWrapper.m in Sources */,
+				C890232B21910A8C00ECFF82 /* CLX_MyBaseType.m in Sources */,
+				C890233121910A8C00ECFF82 /* CLX_Error.m in Sources */,
+				C890232A21910A8C00ECFF82 /* CLX_MyKind.m in Sources */,
+				C890231E21910A8C00ECFF82 /* CLX_Pet.m in Sources */,
+				C890231C21910A8C00ECFF82 /* CLX_DoubleWrapper.m in Sources */,
+				C890233821910A8C00ECFF82 /* CLX_Polymorphisms.m in Sources */,
+				C890231F21910A8C00ECFF82 /* CLX_FloatWrapper.m in Sources */,
+				C890235C219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceServiceTests.m in Sources */,
+				C890232E21910A8C00ECFF82 /* CLX_Dog.m in Sources */,
+				C890235D219115BA00ECFF82 /* ARR_AutoRestSwaggerBATArrayServiceService.m in Sources */,
+				C890231521910A8C00ECFF82 /* CLX_LongWrapper.m in Sources */,
+				C89023462191143D00ECFF82 /* FL_AutoRestSwaggerBATFileServiceServiceTests.m in Sources */,
+				C890235A219115BA00ECFF82 /* ARR_Product.m in Sources */,
+				C890231221910A8C00ECFF82 /* CLX_DictionaryWrapper.m in Sources */,
+				C890231821910A8C00ECFF82 /* CLX_DateWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleModel : NSObject  <Codable>
+@interface SimpleModel : NSObject  <AZCodable>
 
 @property NSString* simpleString;
 @property NSNumber* simpleNumber;

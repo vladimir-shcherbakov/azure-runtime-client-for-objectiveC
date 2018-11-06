@@ -10,23 +10,23 @@
 		66396E1662DF57B39857D0D2F769375C /* Pods-AzureClientRuntime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 667D3766031BB42F62429EF3824CB592 /* Pods-AzureClientRuntime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85B70DAD3E7A72DAA3BF350C36B5D01C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		8F40FF3611A6C5A9B93A1432BACB6A76 /* AzureClientRuntime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC79C1D7B4A6007FE2096D1A2DB58E /* AzureClientRuntime-dummy.m */; };
-		C8FE00ED2177C9A500D1FD2E /* RequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00D82177C9A500D1FD2E /* RequestParameters.m */; };
+		C8FE00ED2177C9A500D1FD2E /* AZRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00D82177C9A500D1FD2E /* AZRequestParameters.m */; };
 		C8FE00EE2177C9A500D1FD2E /* AzureDate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00D92177C9A500D1FD2E /* AzureDate.m */; };
-		C8FE00EF2177C9A500D1FD2E /* DefaultErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DA2177C9A500D1FD2E /* DefaultErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE00EF2177C9A500D1FD2E /* AZDefaultErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DA2177C9A500D1FD2E /* AZDefaultErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8FE00F02177C9A500D1FD2E /* AzureTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DB2177C9A500D1FD2E /* AzureTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8FE00F12177C9A500D1FD2E /* AzureClientRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DC2177C9A500D1FD2E /* AzureClientRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE00F22177C9A500D1FD2E /* OperationError.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00DD2177C9A500D1FD2E /* OperationError.m */; };
-		C8FE00F32177C9A500D1FD2E /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DE2177C9A500D1FD2E /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE00F52177C9A500D1FD2E /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E02177C9A500D1FD2E /* RequestHelper.m */; };
-		C8FE00F62177C9A500D1FD2E /* JsonCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E12177C9A500D1FD2E /* JsonCoder.m */; };
+		C8FE00F22177C9A500D1FD2E /* AZOperationError.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00DD2177C9A500D1FD2E /* AZOperationError.m */; };
+		C8FE00F32177C9A500D1FD2E /* AZCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00DE2177C9A500D1FD2E /* AZCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE00F52177C9A500D1FD2E /* AZRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E02177C9A500D1FD2E /* AZRequestHelper.m */; };
+		C8FE00F62177C9A500D1FD2E /* AZJsonCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E12177C9A500D1FD2E /* AZJsonCoder.m */; };
 		C8FE00F72177C9A500D1FD2E /* AzureDate.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E22177C9A500D1FD2E /* AzureDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE00F92177C9A500D1FD2E /* RequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E42177C9A500D1FD2E /* RequestParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE00FB2177C9A500D1FD2E /* DefaultErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E62177C9A500D1FD2E /* DefaultErrorModel.m */; };
+		C8FE00F92177C9A500D1FD2E /* AZRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E42177C9A500D1FD2E /* AZRequestParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE00FB2177C9A500D1FD2E /* AZDefaultErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E62177C9A500D1FD2E /* AZDefaultErrorModel.m */; };
 		C8FE00FC2177C9A500D1FD2E /* AzureTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FE00E72177C9A500D1FD2E /* AzureTypes.m */; };
-		C8FE00FD2177C9A500D1FD2E /* OperationError.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E82177C9A500D1FD2E /* OperationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE00FE2177C9A500D1FD2E /* JsonCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E92177C9A500D1FD2E /* JsonCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE01002177C9A500D1FD2E /* Coder.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00EB2177C9A500D1FD2E /* Coder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8FE01012177C9A500D1FD2E /* RequestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00EC2177C9A500D1FD2E /* RequestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE00FD2177C9A500D1FD2E /* AZOperationError.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E82177C9A500D1FD2E /* AZOperationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE00FE2177C9A500D1FD2E /* AZJsonCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00E92177C9A500D1FD2E /* AZJsonCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE01002177C9A500D1FD2E /* AZCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00EB2177C9A500D1FD2E /* AZCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FE01012177C9A500D1FD2E /* AZRequestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE00EC2177C9A500D1FD2E /* AZRequestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF3224A7A6C09CF8B692056E89F61332 /* Pods-AzureClientRuntime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 244457A17602DDD81F79F5488704C0DB /* Pods-AzureClientRuntime_Tests-dummy.m */; };
 		EC8F5FCCA96974A284DE5B0DA274C62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -57,23 +57,23 @@
 		B4EFB8CBE9BB7A1191D2451FBCAD2529 /* Pods-AzureClientRuntime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureClientRuntime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7AA1AFC96C3C3FD5687F0E16E2257F2 /* Pods-AzureClientRuntime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureClientRuntime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C601F59DAFBC6420AAB7575545CA6770 /* Pods-AzureClientRuntime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureClientRuntime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8FE00D82177C9A500D1FD2E /* RequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestParameters.m; sourceTree = "<group>"; };
+		C8FE00D82177C9A500D1FD2E /* AZRequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZRequestParameters.m; sourceTree = "<group>"; };
 		C8FE00D92177C9A500D1FD2E /* AzureDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureDate.m; sourceTree = "<group>"; };
-		C8FE00DA2177C9A500D1FD2E /* DefaultErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultErrorModel.h; sourceTree = "<group>"; };
+		C8FE00DA2177C9A500D1FD2E /* AZDefaultErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDefaultErrorModel.h; sourceTree = "<group>"; };
 		C8FE00DB2177C9A500D1FD2E /* AzureTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureTypes.h; sourceTree = "<group>"; };
 		C8FE00DC2177C9A500D1FD2E /* AzureClientRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureClientRuntime.h; sourceTree = "<group>"; };
-		C8FE00DD2177C9A500D1FD2E /* OperationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationError.m; sourceTree = "<group>"; };
-		C8FE00DE2177C9A500D1FD2E /* Codable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Codable.h; sourceTree = "<group>"; };
-		C8FE00E02177C9A500D1FD2E /* RequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelper.m; sourceTree = "<group>"; };
-		C8FE00E12177C9A500D1FD2E /* JsonCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonCoder.m; sourceTree = "<group>"; };
+		C8FE00DD2177C9A500D1FD2E /* AZOperationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZOperationError.m; sourceTree = "<group>"; };
+		C8FE00DE2177C9A500D1FD2E /* AZCodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCodable.h; sourceTree = "<group>"; };
+		C8FE00E02177C9A500D1FD2E /* AZRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZRequestHelper.m; sourceTree = "<group>"; };
+		C8FE00E12177C9A500D1FD2E /* AZJsonCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZJsonCoder.m; sourceTree = "<group>"; };
 		C8FE00E22177C9A500D1FD2E /* AzureDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureDate.h; sourceTree = "<group>"; };
-		C8FE00E42177C9A500D1FD2E /* RequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestParameters.h; sourceTree = "<group>"; };
-		C8FE00E62177C9A500D1FD2E /* DefaultErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultErrorModel.m; sourceTree = "<group>"; };
+		C8FE00E42177C9A500D1FD2E /* AZRequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZRequestParameters.h; sourceTree = "<group>"; };
+		C8FE00E62177C9A500D1FD2E /* AZDefaultErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDefaultErrorModel.m; sourceTree = "<group>"; };
 		C8FE00E72177C9A500D1FD2E /* AzureTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureTypes.m; sourceTree = "<group>"; };
-		C8FE00E82177C9A500D1FD2E /* OperationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationError.h; sourceTree = "<group>"; };
-		C8FE00E92177C9A500D1FD2E /* JsonCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonCoder.h; sourceTree = "<group>"; };
-		C8FE00EB2177C9A500D1FD2E /* Coder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coder.h; sourceTree = "<group>"; };
-		C8FE00EC2177C9A500D1FD2E /* RequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelper.h; sourceTree = "<group>"; };
+		C8FE00E82177C9A500D1FD2E /* AZOperationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZOperationError.h; sourceTree = "<group>"; };
+		C8FE00E92177C9A500D1FD2E /* AZJsonCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZJsonCoder.h; sourceTree = "<group>"; };
+		C8FE00EB2177C9A500D1FD2E /* AZCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCoder.h; sourceTree = "<group>"; };
+		C8FE00EC2177C9A500D1FD2E /* AZRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZRequestHelper.h; sourceTree = "<group>"; };
 		C9526DEF8E43F6E937557B9F981B0474 /* Pods-AzureClientRuntime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AzureClientRuntime_Tests.modulemap"; sourceTree = "<group>"; };
 		CD583C0AFFF971F623F00E08D4554641 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D858CC3F49938C90BF03DDB5FE7F09B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,18 +206,18 @@
 				C8FE00D92177C9A500D1FD2E /* AzureDate.m */,
 				C8FE00DB2177C9A500D1FD2E /* AzureTypes.h */,
 				C8FE00E72177C9A500D1FD2E /* AzureTypes.m */,
-				C8FE00DE2177C9A500D1FD2E /* Codable.h */,
-				C8FE00EB2177C9A500D1FD2E /* Coder.h */,
-				C8FE00DA2177C9A500D1FD2E /* DefaultErrorModel.h */,
-				C8FE00E62177C9A500D1FD2E /* DefaultErrorModel.m */,
-				C8FE00E92177C9A500D1FD2E /* JsonCoder.h */,
-				C8FE00E12177C9A500D1FD2E /* JsonCoder.m */,
-				C8FE00E82177C9A500D1FD2E /* OperationError.h */,
-				C8FE00DD2177C9A500D1FD2E /* OperationError.m */,
-				C8FE00EC2177C9A500D1FD2E /* RequestHelper.h */,
-				C8FE00E02177C9A500D1FD2E /* RequestHelper.m */,
-				C8FE00E42177C9A500D1FD2E /* RequestParameters.h */,
-				C8FE00D82177C9A500D1FD2E /* RequestParameters.m */,
+				C8FE00DE2177C9A500D1FD2E /* AZCodable.h */,
+				C8FE00EB2177C9A500D1FD2E /* AZCoder.h */,
+				C8FE00DA2177C9A500D1FD2E /* AZDefaultErrorModel.h */,
+				C8FE00E62177C9A500D1FD2E /* AZDefaultErrorModel.m */,
+				C8FE00E92177C9A500D1FD2E /* AZJsonCoder.h */,
+				C8FE00E12177C9A500D1FD2E /* AZJsonCoder.m */,
+				C8FE00E82177C9A500D1FD2E /* AZOperationError.h */,
+				C8FE00DD2177C9A500D1FD2E /* AZOperationError.m */,
+				C8FE00EC2177C9A500D1FD2E /* AZRequestHelper.h */,
+				C8FE00E02177C9A500D1FD2E /* AZRequestHelper.m */,
+				C8FE00E42177C9A500D1FD2E /* AZRequestParameters.h */,
+				C8FE00D82177C9A500D1FD2E /* AZRequestParameters.m */,
 			);
 			name = Classes;
 			path = AzureClientRuntime/Classes;
@@ -247,15 +247,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FE01002177C9A500D1FD2E /* Coder.h in Headers */,
+				C8FE01002177C9A500D1FD2E /* AZCoder.h in Headers */,
 				C8FE00F12177C9A500D1FD2E /* AzureClientRuntime.h in Headers */,
-				C8FE00FE2177C9A500D1FD2E /* JsonCoder.h in Headers */,
-				C8FE00FD2177C9A500D1FD2E /* OperationError.h in Headers */,
-				C8FE01012177C9A500D1FD2E /* RequestHelper.h in Headers */,
-				C8FE00F32177C9A500D1FD2E /* Codable.h in Headers */,
+				C8FE00FE2177C9A500D1FD2E /* AZJsonCoder.h in Headers */,
+				C8FE00FD2177C9A500D1FD2E /* AZOperationError.h in Headers */,
+				C8FE01012177C9A500D1FD2E /* AZRequestHelper.h in Headers */,
+				C8FE00F32177C9A500D1FD2E /* AZCodable.h in Headers */,
 				C8FE00F72177C9A500D1FD2E /* AzureDate.h in Headers */,
-				C8FE00EF2177C9A500D1FD2E /* DefaultErrorModel.h in Headers */,
-				C8FE00F92177C9A500D1FD2E /* RequestParameters.h in Headers */,
+				C8FE00EF2177C9A500D1FD2E /* AZDefaultErrorModel.h in Headers */,
+				C8FE00F92177C9A500D1FD2E /* AZRequestParameters.h in Headers */,
 				C8FE00F02177C9A500D1FD2E /* AzureTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,11 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FE00ED2177C9A500D1FD2E /* RequestParameters.m in Sources */,
-				C8FE00F52177C9A500D1FD2E /* RequestHelper.m in Sources */,
-				C8FE00F62177C9A500D1FD2E /* JsonCoder.m in Sources */,
-				C8FE00F22177C9A500D1FD2E /* OperationError.m in Sources */,
-				C8FE00FB2177C9A500D1FD2E /* DefaultErrorModel.m in Sources */,
+				C8FE00ED2177C9A500D1FD2E /* AZRequestParameters.m in Sources */,
+				C8FE00F52177C9A500D1FD2E /* AZRequestHelper.m in Sources */,
+				C8FE00F62177C9A500D1FD2E /* AZJsonCoder.m in Sources */,
+				C8FE00F22177C9A500D1FD2E /* AZOperationError.m in Sources */,
+				C8FE00FB2177C9A500D1FD2E /* AZDefaultErrorModel.m in Sources */,
 				C8FE00FC2177C9A500D1FD2E /* AzureTypes.m in Sources */,
 				8F40FF3611A6C5A9B93A1432BACB6A76 /* AzureClientRuntime-dummy.m in Sources */,
 				C8FE00EE2177C9A500D1FD2E /* AzureDate.m in Sources */,

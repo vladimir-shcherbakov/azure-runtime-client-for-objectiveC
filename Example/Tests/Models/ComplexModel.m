@@ -11,7 +11,7 @@
 
 @implementation ComplexModel
 
-- (void)encodeWithCoder:(id<Coder>) encoder {
+- (void)encodeWithCoder:(id<AZCoder>) encoder {
     
     [super encodeWithCoder:encoder];
     [encoder encodeObject: self.comlexArray forKey: @"comlexArray"];
@@ -19,7 +19,7 @@
     [encoder encodeObject: self.complexSimpleModel forKey: @"complexSimpleModel"];
 }
 
-- (nullable instancetype)initWithDecoder:(id<Coder>)decoder {
+- (nullable instancetype)initWithDecoder:(id<AZCoder>)decoder {
     
     if (self = [super initWithDecoder:decoder]) {
         self.comlexArray = [decoder decodeArrayForKey:@"comlexArray" elementClass:[SimpleModel class]];

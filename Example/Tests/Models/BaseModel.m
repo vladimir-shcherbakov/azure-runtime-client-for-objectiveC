@@ -10,7 +10,7 @@
 
 @implementation BaseModel
 
-- (void)encodeWithCoder:(id<Coder>) encoder {
+- (void)encodeWithCoder:(id<AZCoder>) encoder {
     
     [encoder encodeObject: self.baseNumber forKey: @"baseNumber"];
     [encoder encodeObject: self.baseString forKey: @"baseString"];
@@ -20,7 +20,7 @@
     
 }
 
-- (nullable instancetype)initWithDecoder:(id<Coder>)decoder {
+- (nullable instancetype)initWithDecoder:(id<AZCoder>)decoder {
     
     if (self = [super init]) {
         

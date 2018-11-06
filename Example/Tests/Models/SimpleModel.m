@@ -10,14 +10,14 @@
 
 @implementation SimpleModel
 
-- (void)encodeWithCoder:(id<Coder>) encoder {
+- (void)encodeWithCoder:(id<AZCoder>) encoder {
 
     [encoder encodeObject: self.simpleString forKey: @"simpleString"];
     [encoder encodeObject: self.simpleNumber forKey: @"simpleNumber"];
     
 }
 
-- (nullable instancetype)initWithDecoder:(id<Coder>)decoder {
+- (nullable instancetype)initWithDecoder:(id<AZCoder>)decoder {
     
     if (self = [super init]) {
 

@@ -32,17 +32,16 @@
     
     NSString* baseUrl = @"https://{accountName}.blob.core.windows.net";
     NSString* path = @"/{container}/{blob}";
-    NSDictionary* pathParams = @{
-                                 @"{accountName}": @"first",
-                                 @"{container}": @"second",
-                                 @"{blob}": @"third"};
+    NSDictionary* pathParams = @{@"{accountName}":@"first",
+                                   @"{container}":@"second",
+                                        @"{blob}":@"third"};
     NSString* val1 = nil;
     NSString* val2 = @"second";
-    NSDictionary* queryParams = @{ @"snapshot": @"first",
-                                   @"key1": AZ_NULLABLE(val1),
-                                   @"key2": AZ_NULLABLE(val2)};
+    NSDictionary* queryParams = @{@"snapshot":@"first",
+                                      @"key1":AZ_NULLABLE(val1),
+                                      @"key2":AZ_NULLABLE(val2)};
     
-    NSString* url = [RequestHelper buildUrl:baseUrl
+    NSString* url = [AZRequestHelper buildUrl:baseUrl
                                    withPath:path
                              withPathParams:pathParams
                             withQueryParams:queryParams];
@@ -51,10 +50,10 @@
 }
 
 - (void) testRequestParametersSpecialHeaders {
-    RequestParameters* rp = [RequestParameters createWithUrl: @"https://windows.net"
-                                                    withMethod: @"POST"
-                                                   withHeaders: @{@"Content-Type" : @"application/octet-stream"}
-                                                      withBody: nil];
+    AZRequestParameters* rp = [AZRequestParameters createWithUrl:@"https://windows.net"
+                                                      withMethod:@"POST"
+                                                     withHeaders:@{@"Content-Type":@"application/octet-stream"}
+                                                        withBody:nil];
     [rp withSpecialHeaders:@{@"sk1":@"sv1", @"sk2":@"sv2"}];
 }
 

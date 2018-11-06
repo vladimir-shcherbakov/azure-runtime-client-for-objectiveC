@@ -31,13 +31,13 @@
     sm.simpleString = @"this is a string for simple";
     sm.simpleNumber = @15;
     
-    NSData* data = [JsonCoder encodeObject:sm];
+    NSData* data = [AZJsonCoder encodeObject:sm];
     NSString* str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"\n=== testSimpleModel:\n %@", str);
     
     XCTAssertEqualObjects(@"{\"simpleNumber\":15,\"simpleString\":\"this is a string for simple\"}", str);
     
-    SimpleModel* sm1 = [JsonCoder decodeData:data objectClass:[SimpleModel class]];
+    SimpleModel* sm1 = [AZJsonCoder decodeData:data objectClass:[SimpleModel class]];
     
     XCTAssertEqualObjects(sm.simpleNumber, sm1.simpleNumber);
     XCTAssertEqualObjects(sm.simpleString, sm1.simpleString);
@@ -61,7 +61,7 @@
     cm.comlexArray = @[sm, sm, sm];
     cm.complexDict = @{@"complName1":sm,@"complName2": sm,@"complName3":sm};
     
-    NSData* data = [JsonCoder encodeObject:cm];
+    NSData* data = [AZJsonCoder encodeObject:cm];
     NSLog(@"\n=== JsonCoderResult: %@", [NSString stringWithUTF8String:[data bytes]]);
     
 }

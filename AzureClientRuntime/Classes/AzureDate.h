@@ -10,39 +10,26 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DateString <NSObject>
+@protocol AZDateString <NSObject>
 
-- (instancetype) initFromString: string;
-- (NSString*) toString;
+- (instancetype)initFromString:string;
+- (NSString*)toString;
 
 @end
 
-
-
-
-
-@interface Date : NSDateComponents <DateString>
-
+@interface AZDate : NSDateComponents <AZDateString>
 {
     @protected NSDateFormatter* _dateFormatter;
 }
 
-- (instancetype) initWithFormat: (NSString*) format fromString: string;
+- (instancetype)initWithFormat:(NSString*)format fromString:string;
 
 @end
 
-
-
-
-@interface DateTimeRfc1123 : Date
+@interface AZDateTimeRfc1123 : AZDate
 @end
 
-
-
-
-@interface DateTime : Date
+@interface AZDateTime : AZDate
 @end
-
-
 
 NS_ASSUME_NONNULL_END

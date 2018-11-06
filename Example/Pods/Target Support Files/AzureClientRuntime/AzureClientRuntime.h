@@ -22,6 +22,6 @@ FOUNDATION_EXPORT double AzureClientRuntimeVersionNumber;
 FOUNDATION_EXPORT const unsigned char AzureClientRuntimeVersionString[];
 
 #import <Foundation/Foundation.h>
-#import <AzureClientRuntime/Codable.h>
-#import <AzureClientRuntime/DefaultErrorModel.h>
-#import <AzureClientRuntime/RequestHelper.h>
+#import <AzureClientRuntime/AZCodable.h>
+#import <AzureClientRuntime/AZDefaultErrorModel.h>
+#import <AzureClientRuntime/AZRequestHelper.h>
