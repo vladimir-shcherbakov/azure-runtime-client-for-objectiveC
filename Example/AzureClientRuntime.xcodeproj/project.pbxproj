@@ -353,11 +353,11 @@
 		C89023EB2192238E00ECFF82 /* clx */ = {
 			isa = PBXGroup;
 			children = (
+				C89024422192238E00ECFF82 /* CLX_AutoRestComplexTestServiceService.h */,
 				C89023EC2192238E00ECFF82 /* CLX_AutoRestComplexTestServiceService.m */,
+				C89024412192238E00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m */,
 				C89023ED2192238E00ECFF82 /* Models */,
 				C890242E2192238E00ECFF82 /* Operations */,
-				C89024412192238E00ECFF82 /* CLX_AutoRestComplexTestServiceServiceTests.m */,
-				C89024422192238E00ECFF82 /* CLX_AutoRestComplexTestServiceService.h */,
 			);
 			path = clx;
 			sourceTree = "<group>";

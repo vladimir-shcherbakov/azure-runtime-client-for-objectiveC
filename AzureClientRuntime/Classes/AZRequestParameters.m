@@ -9,7 +9,6 @@
 #import "AZRequestParameters.h"
 
 @implementation AZRequestParameters
-
 - (instancetype) initWithUrl:(NSString*)url withMethod:(NSString*)method withHeaders:(NSDictionary*)headers withBody:(NSData*)body {
     
     self = [super init];
@@ -19,19 +18,17 @@
         self.headers = [[NSMutableDictionary alloc] initWithDictionary:headers];
         self.body = body;
     }
-    
     return self;
 }
-
 + (instancetype) createWithUrl:(NSString*)url withMethod:(NSString*)method withHeaders: (NSDictionary*)headers withBody:(NSData* _Nullable)body {
+    
     AZRequestParameters* p = [[AZRequestParameters alloc] initWithUrl:url withMethod:method withHeaders:headers withBody:body];
     return p;
 }
-
 - (void)withSpecialHeaders:(NSDictionary*)headers {
+    
     if (headers) {
         [self.headers addEntriesFromDictionary:headers];
     }
 }
-
 @end

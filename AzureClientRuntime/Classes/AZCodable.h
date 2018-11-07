@@ -14,10 +14,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol AZCodable <NSObject>
-
 - (void)encodeWithCoder:(id<AZCoder>)encoder;
 - (nullable instancetype)initWithDecoder:(id<AZCoder>)decoder;
-
 @end
 
 NS_ASSUME_NONNULL_END

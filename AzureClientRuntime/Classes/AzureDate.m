@@ -9,22 +9,18 @@
 #import "AzureDate.h"
 
 @implementation AZDate
-
 - (instancetype) init {
     return [self initFromString:nil];
 }
-
 - (instancetype)initFromString:(NSString*)string {
     return [self initWithFormat:@"yyyy-MM-dd" fromString:string];
 }
-
 - (instancetype)initWithFormat:(NSString*)format fromString:string {
     if (self = [super init]) {
         self.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
         _dateFormatter = [NSDateFormatter new];
         _dateFormatter.dateFormat = format;
         _dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
-        
         if (string) {
             NSDateComponents* src = [AZDate dateFromString:string withFormatter:_dateFormatter];
             src.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
@@ -38,7 +34,6 @@
     }
     return self;
 }
-
 + (NSDateComponents*)dateFromString:(NSString *)string withFormatter:(NSDateFormatter*)formater {
     NSDate* date = [formater dateFromString:[string uppercaseString]];
     if (date == nil) {
@@ -53,31 +48,23 @@
     NSDateComponents* components = [cal components:unitFlags fromDate:date];
     return components;
 }
-
 - (nonnull NSString *)toString {
     NSDate* date = [[NSCalendar currentCalendar] dateFromComponents:self];
     return [_dateFormatter stringFromDate:date];
 }
-
 @end
 
 @implementation AZDateTimeRfc1123
-
 - (instancetype) initFromString: (NSString*)string {
     
     return [super initWithFormat:@"EEE, dd MMM yyyy HH:mm:ssZ" fromString:string];
 }
-
 @end
 
-
 @implementation AZDateTime
-
 - (instancetype) initFromString: (NSString*)string {
-    
     return [super initWithFormat:@"yyyy-MM-dd'T'HH:mm:ssZ" fromString:string];
 }
-
 @end
 
 

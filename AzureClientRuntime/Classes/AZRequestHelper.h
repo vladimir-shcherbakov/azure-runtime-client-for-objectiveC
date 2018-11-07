@@ -20,9 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
         withPathParams:(NSDictionary*)pathParams
        withQueryParams:(NSDictionary*)queryParams;
 
-
 + (void) executeRequest:(AZRequestParameters*)request
-           withCallback:(void (^)(NSData* _Nullable, NSInteger statusCode, NSError* _Nullable)) callback;
+           withCallback:(void (^)(NSData *_Nullable, NSInteger statusCode, NSError *_Nullable)) callback;
 
 /**
  @param responseClass respone type
@@ -32,17 +31,16 @@ NS_ASSUME_NONNULL_BEGIN
       withResponseClass:(nullable Class)responseClass
        withElementClass:(nullable Class)elementClass
          withErrorClass:(nullable Class)errorClass
-           withCallback:(void (^)(id _Nullable, AZOperationError* _Nullable))callback;
+           withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
 
 + (void) executeRequest:(AZRequestParameters*)request
       withResponseClass:(nullable Class)responseClass
          withErrorClass:(nullable Class)errorClass
-           withCallback:(void (^)(id _Nullable, AZOperationError* _Nullable))callback;
+           withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
 
 + (void) executeRequest:(AZRequestParameters*)request
          withErrorClass:(nullable Class)errorClass
            withCallback:(void (^)(AZOperationError*))callback;
-
 @end
 
 NS_ASSUME_NONNULL_END

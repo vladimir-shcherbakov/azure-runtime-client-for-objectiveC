@@ -15,13 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
  * decode: dictionary -> object
  */
 @protocol AZCoder
-
 - (void) encodeObject:(nullable id)object forKey:(NSString *)key;
-
 - (nullable id) decodeObjectForKey: (NSString *) key objectClass: (Class) objectClass;
 - (nullable id) decodeDictionaryForKey: (NSString *) key elementClass: (nullable Class) elementClass;
 - (nullable id) decodeArrayForKey: (NSString *) key elementClass: (nullable Class) elementClass;
-
 @end
 
 

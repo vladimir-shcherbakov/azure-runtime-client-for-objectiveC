@@ -9,6 +9,4 @@
 #import "AZDefaultErrorModel.h"
 
 @implementation AZDefaultErrorModel
-
-
 @end
