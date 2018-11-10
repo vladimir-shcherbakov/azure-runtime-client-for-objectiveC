@@ -12,17 +12,17 @@
 #import "AzureTypes.h"
 
 @interface AZRequestHelper (private)
-+ (void) logRequestUrl:(NSString*)url;
-+ (void) logRequestBody:(NSData*)body;
-+ (void) logResponseBody:(NSData*)body;
-@property(class,readonly)NSDictionary *specialHeaders;
++ (void)logRequestUrl:(NSString *)url;
++ (void)logRequestBody:(NSData *)body;
++ (void)logResponseBody:(NSData *)body;
+@property (class,readonly)NSDictionary *specialHeaders;
 @end
 
 @implementation AZRequestHelper (private)
 + (NSDictionary*)specialHeaders {
-    static NSDictionary* _specialHeaders;
+    static NSDictionary *_specialHeaders;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    dispatch_once(&onceToken,^{
         _specialHeaders = @{@"user-agent":@"AutoRest-ObjectiveC"};
     });
     return _specialHeaders;
@@ -31,61 +31,61 @@
      NSLog(@"\n<<<< URL: %@", url);
 }
 + (void)logRequestBody:(NSData*)body {
-    NSString* prefix = @"\n<<<<";
+    NSString* prefix = @"\n<<<< BODY:";
     if (body && body.length > 0) {
         if (body.length < 2048) {
             NSError* error;
-            id json = [NSJSONSerialization JSONObjectWithData: body
-                                                      options: NSJSONReadingAllowFragments
-                                                        error: &error];
+            id json = [NSJSONSerialization JSONObjectWithData:body
+                                                      options:NSJSONReadingAllowFragments
+                                                        error:&error];
             if (json != nil) {
                 NSLog(@"%@ BODY: %@", prefix, json);
             } else {
                 NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
                 if (bodyAsString != nil) {
-                    NSLog(@"%@ BODY: %@", prefix, bodyAsString);
+                    NSLog(@"%@ %@", prefix, bodyAsString);
                 } else {
-                    NSLog(@"%@ BODY: %@", prefix, body);
+                    NSLog(@"%@ %@", prefix, body);
                 }
             }
         } else {
-            NSLog(@"%@ BODY: %lu bytes", prefix, (unsigned long)body.length);
+            NSLog(@"%@ %lu bytes", prefix, (unsigned long)body.length);
         }
     } else {
-        NSLog(@"%@ BODY: <empty>", prefix);
+        NSLog(@"%@ <empty>", prefix);
     }
 }
 + (void)logResponseBody:(NSData*)body {
-    NSString* prefix = @"\n>>>>";
+    NSString* prefix = @"\n>>>>  BODY:";
     if (body && body.length > 0) {
         if (body.length < 2048) {
             NSError* error;
-            id json = [NSJSONSerialization JSONObjectWithData: body
-                                                      options: NSJSONReadingAllowFragments
-                                                        error: &error];
+            id json = [NSJSONSerialization JSONObjectWithData:body
+                                                      options:NSJSONReadingAllowFragments
+                                                        error:&error];
             if (json != nil) {
-                NSLog(@"%@ BODY: %@", prefix, json);
+                NSLog(@"%@ %@", prefix, json);
             } else {
                 NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
                 if (bodyAsString != nil)
-                    NSLog(@"%@ BODY: %@", prefix, bodyAsString);
+                    NSLog(@"%@ %@", prefix, bodyAsString);
                 else
-                    NSLog(@"%@ BODY: %@", prefix, body);
+                    NSLog(@"%@ %@", prefix, body);
             }
         } else {
-            NSLog(@"%@ BODY: %lu bytes", prefix, (unsigned long)body.length);
+            NSLog(@"%@ %lu bytes", prefix, (unsigned long)body.length);
         }
     } else {
-        NSLog(@"%@ BODY: <empty>", prefix);
+        NSLog(@"%@ <empty>", prefix);
     }
 }
 @end
 
 @implementation AZRequestHelper
-+ (NSString*)buildUrl:(NSString*)baseUrl
-             withPath:(NSString*)path
-       withPathParams:(NSDictionary*)pathParams
-      withQueryParams:(NSDictionary*)queryParams {
++ (NSString*)buildUrl:(NSString *)baseUrl
+             withPath:(NSString *)path
+       withPathParams:(NSDictionary *)pathParams
+      withQueryParams:(NSDictionary *)queryParams {
     
     NSString* fullPath =  [NSString stringWithFormat: @"%@%@", baseUrl, path];
     for(id key in [pathParams allKeys]) {
@@ -113,22 +113,22 @@
                                         userInfo:nil];
                             }
                         }
-                        [queries addObject: [NSString stringWithFormat:@"%@=%@", key, joined]];
+                        [queries addObject:[NSString stringWithFormat:@"%@=%@", key, joined]];
                     }
                 } else if ([value conformsToProtocol:@protocol(AZBoolean)]) {
                     NSString* boolString = [value getBool] ? @"true" : @"false";
                     [queries addObject: [NSString stringWithFormat:@"%@=%@", key, boolString]];
                 } else {
-                    [queries addObject: [NSString stringWithFormat:@"%@=%@", key, value]];
+                    [queries addObject:[NSString stringWithFormat:@"%@=%@", key, value]];
                 }
             }
         }
-        fullPath = [NSString stringWithFormat: @"%@?%@", fullPath, [queries componentsJoinedByString:@"&"]];
+        fullPath = [NSString stringWithFormat:@"%@?%@", fullPath, [queries componentsJoinedByString:@"&"]];
     }
     return fullPath;
 }
-+ (void)executeRequest:(AZRequestParameters*)requestParams
-           withCallback: (void (^)(NSData* _Nullable, NSInteger statusCode, NSError* _Nullable)) callback {
++ (void)executeRequest:(AZRequestParameters *)requestParams
+           withCallback: (void (^)(NSData *_Nullable, NSInteger statusCode, NSError *_Nullable)) callback {
     
     [requestParams withSpecialHeaders:AZRequestHelper.specialHeaders];
     NSURL *url = [NSURL URLWithString:requestParams.url];
@@ -145,7 +145,7 @@
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task =
         [session dataTaskWithRequest:request
-                   completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
+                   completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
              if (error) {
                 callback(nil, 0, error);
              } else {
@@ -155,10 +155,10 @@
          }];
     [task resume];
 }
-+ (void)executeRequest:(AZRequestParameters*)requestParameters
++ (void)executeRequest:(AZRequestParameters *)requestParameters
      withResponseClass:(nullable Class)responseClass
         withErrorClass:(nullable Class)errorClass
-          withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback {
+          withCallback:(void(^)(id _Nullable, AZOperationError *_Nullable))callback {
     
     [AZRequestHelper executeRequest:requestParameters
                  withResponseClass:responseClass
@@ -166,42 +166,45 @@
                     withErrorClass:errorClass
                       withCallback:callback];
 }
-+ (void)executeRequest:(AZRequestParameters*)requestParameters
++ (void)executeRequest:(AZRequestParameters *)requestParameters
      withResponseClass:(nullable Class)responseClass
       withElementClass:(nullable Class)elementClass
         withErrorClass:(nullable Class)errorClass
           withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback {
     
-    [AZRequestHelper executeRequest:requestParameters withCallback:^(NSData * data, NSInteger statusCode, NSError* error) {
+    [AZRequestHelper executeRequest:requestParameters withCallback:^(NSData *data, NSInteger statusCode, NSError *error) {
         if (error) {
-            AZOperationError* err = [AZOperationError errorWithDomain:error.domain withReason: error.localizedDescription];
+            AZOperationError *err = [AZOperationError errorWithDomain:error.domain withReason: error.localizedDescription];
             callback(nil, err);
             return;
         }
         [AZRequestHelper logResponseBody:data];
         if (statusCode >= 400) {
-            if (data && [data length]>0) {
+            if (data && data.length > 0) {
                 @try {
                     id serverErr;
                     if (errorClass == [AZDefaultErrorModel class]) {
-                        AZDefaultErrorModel* dem = [AZDefaultErrorModel new];
+                        AZDefaultErrorModel *dem = [AZDefaultErrorModel new];
                         dem.message = [NSString stringWithUTF8String:[data bytes]];
                         serverErr = dem;
                     } else {
-                        serverErr = [AZJsonCoder decodeData:data objectClass: [errorClass class]];
+                        serverErr = [AZJsonCoder decodeData:data objectClass:[errorClass class]];
                     }
-                    AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason:[serverErr valueForKey:@"message"]];
+                    // try to extract error message from error models seen so far.
+                    NSString *msg = getErrorMessage(serverErr);
+                    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:msg];
                     callback(nil, err);
                 } @catch (NSException* e) {
                     AZOperationError* err = [AZOperationError errorWithDomain:e.name withReason:e.reason];
                     callback(nil, err);
                 }
             } else {
-                AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason: [NSString stringWithFormat:@"Server returned status %ld with no decsription", (long)statusCode]];
+                AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError"
+                                                               withReason:[NSString stringWithFormat:@"Server returned status %ld with no decsription", (long)statusCode]];
                 callback(nil, err);
             }
         } else {
-            if (data && [data length]>0) {
+            if (data && data.length > 0) {
                 @try {
                     id result = nil;
                     if (elementClass != nil) {
@@ -211,35 +214,48 @@
                     }
                     callback(result, nil);
                 } @catch (NSException *e) {
-                    AZOperationError* err = [AZOperationError errorWithDomain:e.name withReason:[e reason]];
+                    AZOperationError *err = [AZOperationError errorWithDomain:e.name withReason:[e reason]];
                     callback(nil, err);
                 }
             } else {
-                AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason:@"Server returned empty body"];
+                AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:@"Server returned empty body"];
                 callback(nil, err);
             }
         }
     }];
 }
-+ (void)executeRequest:(AZRequestParameters*)rp
+static NSString *getErrorMessage(id serverErr) {
+    NSString *msg = @"UNDEFINED";
+    if ([serverErr respondsToSelector:@selector(message)]) {
+        msg = [serverErr message];
+    } else if ([serverErr respondsToSelector:@selector(error)]) {
+        if ([[serverErr error]isKindOfClass:[NSString class]]) {
+            msg = (NSString *)[serverErr error];
+        }
+        return getErrorMessage([serverErr error]);
+    }
+    return msg;
+}
++ (void)executeRequest:(AZRequestParameters *)rp
         withErrorClass:(nullable Class)errorClass
-          withCallback:(void (^)(AZOperationError*))callback {
+          withCallback:(void (^)(AZOperationError *))callback {
     
     [AZRequestHelper executeRequest:rp withCallback:^(NSData * data, NSInteger statusCode, NSError* error) {
         if (error) {
-            AZOperationError* err = [AZOperationError errorWithDomain:error.domain withReason: error.localizedDescription];
+            AZOperationError* err = [AZOperationError errorWithDomain:error.domain withReason:error.localizedDescription];
             callback(err);
             return;
         }
         [AZRequestHelper logResponseBody:data];
         if (statusCode >= 400) {
             @try {
-                if (data && [data length]>0) {
+                if (data && data.length > 0) {
                     id serverErr = [AZJsonCoder decodeData:data objectClass: [errorClass class]];
-                    AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason:[serverErr valueForKey:@"message"]];
+                    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:[serverErr valueForKey:@"message"]];
                     callback(err);
                 } else {
-                    AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason: [NSString stringWithFormat:@"Server returned status %ld with no decsription", (long)statusCode]];
+                    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError"
+                                                                   withReason:[NSString stringWithFormat:@"Server returned status %ld with no decsription", (long)statusCode]];
                     callback(err);
                 }
             } @catch (NSException *e) {
@@ -248,14 +264,15 @@
             }
         } else {
             @try {
-                if (data && [data length]>0) {
-                    AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError" withReason:@"Server returned unexpected body"];
+                if (data && data.length > 0) {
+                    AZOperationError* err = [AZOperationError errorWithDomain:@"ServerError"
+                                                                   withReason:@"Server returned unexpected body"];
                     callback(err);
                 } else {
                     callback(nil);
                 }
             } @catch (NSException *e) {
-                AZOperationError* err = [AZOperationError errorWithDomain:e.name withReason:[e reason]];
+                AZOperationError *err = [AZOperationError errorWithDomain:e.name withReason:[e reason]];
                 callback(err);
             }
         }

@@ -13,17 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol AZDateString <NSObject>
 
 - (instancetype)initFromString:string;
-- (NSString*)toString;
+- (NSString *)toString;
 
 @end
 
 @interface AZDate : NSDateComponents <AZDateString>
 {
-    @protected NSDateFormatter* _dateFormatter;
+    @protected NSDateFormatter *_dateFormatter;
 }
-
-- (instancetype)initWithFormat:(NSString*)format fromString:string;
-
+- (instancetype)initWithFormat:(NSString *)format fromString:string;
 @end
 
 @interface AZDateTimeRfc1123 : AZDate

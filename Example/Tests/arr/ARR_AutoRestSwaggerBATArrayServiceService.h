@@ -16,7 +16,7 @@
  * Gets the ARR_ArraysProtocol object to access its operations.
  * @return the ARR_Arrays object.
  */
-- (id<ARR_ArraysProtocol>) arrays;
+- (id<ARR_ArraysProtocol>)arrays;
 
 @end
 
@@ -24,9 +24,9 @@
 /**
 The default base URL. http://localhost:3000
 */
-@property (readonly) NSString* DEFAULT_BASE_URL;
-@property (readonly) NSString* key;
-@property (readonly) NSDictionary* specialHeaders;
+@property (readonly) NSString *DEFAULT_BASE_URL;
+@property (readonly) NSString *key;
+@property (readonly) NSDictionary *specialHeaders;
 
 + (id<ARR_AutoRestSwaggerBATArrayServiceServiceProtocol>)create;
 @end

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AZDefaultErrorModel : NSObject
-@property NSString* message;
+@property NSString *message;
 @end
 
 NS_ASSUME_NONNULL_END

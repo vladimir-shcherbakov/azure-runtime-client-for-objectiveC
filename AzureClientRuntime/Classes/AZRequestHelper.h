@@ -15,32 +15,32 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AZRequestHelper : NSObject
 
-+ (NSString*) buildUrl:(NSString*)baseUrl
-              withPath:(NSString*)path
-        withPathParams:(NSDictionary*)pathParams
-       withQueryParams:(NSDictionary*)queryParams;
++ (NSString*)buildUrl:(NSString *)baseUrl
+             withPath:(NSString *)path
+       withPathParams:(NSDictionary *)pathParams
+      withQueryParams:(NSDictionary *)queryParams;
 
-+ (void) executeRequest:(AZRequestParameters*)request
-           withCallback:(void (^)(NSData *_Nullable, NSInteger statusCode, NSError *_Nullable)) callback;
++ (void)executeRequest:(AZRequestParameters*)request
+          withCallback:(void (^)(NSData *_Nullable, NSInteger statusCode, NSError *_Nullable)) callback;
 
 /**
  @param responseClass respone type
  @param elementClass if resoponse is an array or dictionary - element type, else - nil
  */
-+ (void) executeRequest:(AZRequestParameters*)request
-      withResponseClass:(nullable Class)responseClass
-       withElementClass:(nullable Class)elementClass
-         withErrorClass:(nullable Class)errorClass
-           withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
++ (void)executeRequest:(AZRequestParameters *)request
+     withResponseClass:(nullable Class)responseClass
+      withElementClass:(nullable Class)elementClass
+        withErrorClass:(nullable Class)errorClass
+          withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
 
-+ (void) executeRequest:(AZRequestParameters*)request
-      withResponseClass:(nullable Class)responseClass
-         withErrorClass:(nullable Class)errorClass
-           withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
++ (void)executeRequest:(AZRequestParameters *)request
+     withResponseClass:(nullable Class)responseClass
+        withErrorClass:(nullable Class)errorClass
+          withCallback:(void (^)(id _Nullable, AZOperationError *_Nullable))callback;
 
-+ (void) executeRequest:(AZRequestParameters*)request
-         withErrorClass:(nullable Class)errorClass
-           withCallback:(void (^)(AZOperationError*))callback;
++ (void)executeRequest:(AZRequestParameters *)request
+        withErrorClass:(nullable Class)errorClass
+          withCallback:(void (^)(AZOperationError*))callback;
 @end
 
 NS_ASSUME_NONNULL_END

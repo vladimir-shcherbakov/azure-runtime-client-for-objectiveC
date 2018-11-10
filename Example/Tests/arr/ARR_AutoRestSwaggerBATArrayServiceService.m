@@ -15,7 +15,7 @@
     if (self) {
         _DEFAULT_BASE_URL = @"http://localhost:3000";
         _key = @"UNDEFINED";
-        _specialHeaders = @{@"ocp-apim-subscription-key" : self.key};
+        _specialHeaders = @{@"ocp-apim-subscription-key":self.key};
     }
     return self;
 }
@@ -28,7 +28,7 @@
  * The ARR_Arrays object to access its operations.
  */
 - (id<ARR_ArraysProtocol>) arrays {
-     id<ARR_ArraysProtocol> op = [[ARR_Arrays alloc] initWithService:self];
+     id<ARR_ArraysProtocol> op = [[ARR_Arrays alloc]initWithService:self];
      return op;
 }
 @end

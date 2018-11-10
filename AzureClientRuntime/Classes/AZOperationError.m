@@ -9,7 +9,7 @@
 #import "AZOperationError.h"
 
 @implementation AZOperationError
-+ (instancetype) errorWithDomain: (OpDamain*) domain withReason: (NSString*) reason {
++ (instancetype)errorWithDomain:(OpDamain *)domain withReason:(NSString *)reason {
     AZOperationError* oe = [AZOperationError new];
     oe.domain = domain;
     oe.reason = reason;

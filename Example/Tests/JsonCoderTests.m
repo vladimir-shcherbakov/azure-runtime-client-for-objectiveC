@@ -27,43 +27,33 @@
 }
 
 - (void)testSimpleModel {
-    SimpleModel* sm = [SimpleModel new];
+    SimpleModel *sm = [SimpleModel new];
     sm.simpleString = @"this is a string for simple";
-    sm.simpleNumber = @15;
-    
-    NSData* data = [AZJsonCoder encodeObject:sm];
-    NSString* str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    sm.simpleNumber = @15;    
+    NSData *data = [AZJsonCoder encodeObject:sm];
+    NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"\n=== testSimpleModel:\n %@", str);
-    
     XCTAssertEqualObjects(@"{\"simpleNumber\":15,\"simpleString\":\"this is a string for simple\"}", str);
-    
-    SimpleModel* sm1 = [AZJsonCoder decodeData:data objectClass:[SimpleModel class]];
-    
+    SimpleModel *sm1 = [AZJsonCoder decodeData:data objectClass:[SimpleModel class]];
     XCTAssertEqualObjects(sm.simpleNumber, sm1.simpleNumber);
     XCTAssertEqualObjects(sm.simpleString, sm1.simpleString);
 }
 
 - (void)testComplexModel {
-    
-    SimpleModel* sm = [SimpleModel new];
-
+    SimpleModel *sm = [SimpleModel new];
     sm.simpleString = @"this is a string for simple";
     sm.simpleNumber = @1E+34;
-    
-    ComplexModel* cm = [ComplexModel new];
-    cm.baseDict = @{ @"baseName1": sm, @"baseName2": sm, @"baseName3": sm};
+    ComplexModel *cm = [ComplexModel new];
+    cm.baseDict = @{ @"baseName1":sm, @"baseName2":sm, @"baseName3":sm};
     cm.baseString = @"This is string for base";
     cm.baseNumber = @777.345;
     cm.baseArray = @[sm, sm, sm];
-    
     cm.baseSimpleModel = sm;
     cm.complexSimpleModel = sm;
     cm.comlexArray = @[sm, sm, sm];
-    cm.complexDict = @{@"complName1":sm,@"complName2": sm,@"complName3":sm};
-    
+    cm.complexDict = @{@"complName1":sm,@"complName2":sm,@"complName3":sm};
     NSData* data = [AZJsonCoder encodeObject:cm];
     NSLog(@"\n=== JsonCoderResult: %@", [NSString stringWithUTF8String:[data bytes]]);
-    
 }
 
 

@@ -14,10 +14,10 @@ typedef NSString OpDamain;
 
 @interface AZOperationError : NSObject
 
-@property OpDamain* domain;
-@property NSString* reason;
+@property OpDamain *domain;
+@property NSString *reason;
 
-+ (instancetype) errorWithDomain: (OpDamain*) domain withReason: (NSString*) reason;
++ (instancetype)errorWithDomain:(OpDamain *)domain withReason:(NSString *)reason;
 
 @end
 

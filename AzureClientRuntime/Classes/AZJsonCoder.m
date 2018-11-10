@@ -12,14 +12,13 @@
 @interface AZJsonCoder (private)
 - (instancetype)init;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
-+ (NSDictionary*)convertObjectToDictionary:(id<AZCodable>)codable;
++ (NSDictionary *)convertObjectToDictionary:(id<AZCodable>)codable;
 + (id)serilializeObject:(nullable id)object;
 + (nullable id)deserilializeObject:(nullable id)object forKey:(NSString *)key objectClass:(Class)objectClass;
 @end
 
 @implementation AZJsonCoder (private)
 - (instancetype)init {
-    
     if (self = [super init]) {
         dd = [NSMutableDictionary new];
     }
@@ -27,7 +26,7 @@
 }
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
     if (self = [super init]) {
-        dd = [[NSMutableDictionary alloc] initWithDictionary:dict];
+        dd = [[NSMutableDictionary alloc]initWithDictionary:dict];
     }
     return self;
 }
@@ -43,20 +42,19 @@
         NSArray* src = object;
         NSMutableArray* dst = [NSMutableArray new];
         for (id item in src) {
-            
             [dst addObject:[AZJsonCoder serilializeObject: item]];
         }
         return dst;
     } else if ([object isKindOfClass:[NSDictionary class]]) {
         NSMutableDictionary* dst = [NSMutableDictionary new];
-        NSDictionary* src = object;
+        NSDictionary *src = object;
         for (id key in [src allKeys]) {
-            [dst setObject:[AZJsonCoder serilializeObject: src[key]] forKey:key];
+            [dst setObject:[AZJsonCoder serilializeObject:src[key]]forKey:key];
         }
         return dst;
-    } else if ([[object class] conformsToProtocol:@protocol(AZCodable)]) {
+    } else if ([[object class]conformsToProtocol:@protocol(AZCodable)]) {
         return [AZJsonCoder convertObjectToDictionary:object];
-    } else if ([[object class] conformsToProtocol:@protocol(AZBoolean)]) {
+    } else if ([[object class]conformsToProtocol:@protocol(AZBoolean)]) {
         if ([object getBool]) return @YES;
         else return @NO;
     } else if ([object isKindOfClass:[NSUUID class]]) {
@@ -66,7 +64,7 @@
     } else if ([object isKindOfClass:[NSNumber class]]
                || [object isKindOfClass:[NSString class]]) {
         return object;
-    } else if ([[object class] conformsToProtocol:@protocol(AZDateString)]) {
+    } else if ([[object class]conformsToProtocol:@protocol(AZDateString)]) {
         return [object toString];
     } else {
         return object;
@@ -81,21 +79,21 @@
     if ([objectClass conformsToProtocol:@protocol(AZCodable)]) {
         
         AZJsonCoder* decoder = [[AZJsonCoder alloc]initWithDictionary:object];
-        return [[objectClass alloc] initWithDecoder:decoder];
+        return [[objectClass alloc]initWithDecoder:decoder];
         
     }
     if ([objectClass conformsToProtocol:@protocol(AZDateString)]) {
         if (![object isKindOfClass:[NSString class]]) {
             @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object  class]]
+                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object class]]
                                          userInfo:nil];
         }
-        return [[objectClass alloc] initFromString:object ];
+        return [[objectClass alloc] initFromString:object];
     }
     if ([objectClass conformsToProtocol:@protocol(AZStringEnum)]) {
         if (![object isKindOfClass:[NSString class]]) {
             @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object  class]]
+                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object class]]
                                          userInfo:nil];
         }
         return [objectClass fromString:object];
@@ -103,14 +101,13 @@
     if ([objectClass conformsToProtocol:@protocol(AZBoolean)]) {
         if (![object isKindOfClass:[NSNumber class]]) {
             @throw [NSException exceptionWithName:@"IncompatiblePointerTypes"
-                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object  class]]
+                                           reason:[NSString stringWithFormat:@"For key '%@' incompatible pointer types initializing '%@ *' with an expression of type '%@ *'", key, objectClass, [object class]]
                                          userInfo:nil];
         }
-        NSNumber* val = object ;
+        NSNumber *val = object ;
         return [[objectClass alloc]initWithBool:[val boolValue]];
     }
     if ([objectClass isSubclassOfClass:[NSData class]]) {
-        
         return [[NSData alloc]initWithBase64EncodedString:object options:0];
     }
     if ([objectClass isSubclassOfClass:[NSUUID class]]) {
@@ -132,14 +129,14 @@
 @end
 
 @implementation AZJsonCoder
-+ (NSData*) encodeObject:(id)object {
++ (NSData *)encodeObject:(id)object {
     id so = [AZJsonCoder serilializeObject:object];
     if ([object isKindOfClass:[NSArray class]]
         || [object isKindOfClass:[NSDictionary class]]
         || [object conformsToProtocol:@protocol(AZCodable)]) {
         if (@available(iOS 11.0, *)) {
-            NSError* error;
-            NSData* jsonData = [NSJSONSerialization dataWithJSONObject:so
+            NSError *error;
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:so
                                                                options:NSJSONWritingSortedKeys
                                                                  error:&error];
             if (error) {
@@ -156,9 +153,9 @@
     }
     return [so dataUsingEncoding:NSUTF8StringEncoding];
 }
-+ (nullable id) decodeContainer:(NSData*)jsonData
++ (nullable id)decodeContainer:(NSData *)jsonData
                    elementClass:(Class)elementClass {
-    NSError* error;
+    NSError *error;
     id json = [NSJSONSerialization JSONObjectWithData:jsonData
                                               options:NSJSONReadingAllowFragments
                                                 error:&error];
@@ -169,8 +166,8 @@
         return json;
     }
     if ([json isKindOfClass:[NSArray class]]) {
-        NSArray* src = json;
-        NSMutableArray* dst = [NSMutableArray new];
+        NSArray *src = json;
+        NSMutableArray *dst = [NSMutableArray new];
         for (id item in src) {
             [dst addObject: [AZJsonCoder deserilializeObject:item
                                                       forKey:@"BODY"
@@ -178,8 +175,8 @@
         }
         return dst;
     } else if ([json isKindOfClass:[NSDictionary class]]) {
-        NSDictionary* src = json;
-        NSMutableArray* dst = [NSMutableArray new];
+        NSDictionary *src = json;
+        NSMutableArray *dst = [NSMutableArray new];
         for (id item in [src allKeys]) {
             [dst addObject: [AZJsonCoder deserilializeObject: src[item]
                                                       forKey:@"BODY"
@@ -193,12 +190,12 @@
     }
     return json;
 }
-+ (nullable id) decodeData:(NSData*)jsonData
++ (nullable id) decodeData:(NSData *)jsonData
                objectClass:(Class)objectClass {
     if ([objectClass isSubclassOfClass:[NSData class]]) {
         return [NSData dataWithData:jsonData];
     }
-    NSError* error;
+    NSError *error;
     id json = [NSJSONSerialization JSONObjectWithData: jsonData
                                               options: NSJSONReadingAllowFragments
                                                 error: &error];
@@ -212,11 +209,11 @@
                               objectClass:objectClass];
 }
 // From Coder protocol
-- (void) encodeObject: (nullable id)object
-               forKey: (NSString *)key {
+- (void)encodeObject:(nullable id)object
+              forKey:(NSString *)key {
     dd[key] = [AZJsonCoder serilializeObject:object];
 }
-static id flatten(NSString* key, id dictionary) {
+static id flatten(NSString *key, id dictionary) {
     id value = dictionary[key];
     if ([key containsString:@"."]) {
         value = dictionary;
@@ -228,15 +225,15 @@ static id flatten(NSString* key, id dictionary) {
     return value;
 }
 // From Coder protocol
-- (nullable id) decodeObjectForKey: (NSString *) key
-                       objectClass: (Class) objectClass {
+- (nullable id) decodeObjectForKey:(NSString *)key
+                       objectClass:(Class)objectClass {
     id value = flatten(key, dd);
     return [AZJsonCoder deserilializeObject:value
-                                   forKey:key
-                              objectClass:objectClass];
+                                     forKey:key
+                                objectClass:objectClass];
 }
-- (nullable id) decodeDictionaryForKey: (NSString *) key
-                          elementClass: (nullable Class) elementClass {
+- (nullable id) decodeDictionaryForKey:(NSString *)key
+                          elementClass:(nullable Class)elementClass {
     id value = flatten(key, dd);
     if (nil == value) {
         return nil;
@@ -246,17 +243,17 @@ static id flatten(NSString* key, id dictionary) {
                 exceptionWithName:@"IncorrectDecodingMethod"
                 reason:@"You are trying to decode an element which is not an array with the 'decodeDictionaryForKey:elementClass:' method" userInfo:nil];
     }
-    NSDictionary* src = value;
-    NSMutableDictionary* dst = [NSMutableDictionary new];
+    NSDictionary *src = value;
+    NSMutableDictionary *dst = [NSMutableDictionary new];
     for (id key in [src allKeys]) {
         [dst setObject:[AZJsonCoder deserilializeObject:src[key]
-                                               forKey:key objectClass:elementClass]
+                                                 forKey:key objectClass:elementClass]
                 forKey:key];
     }
     return dst;
 }
-- (nullable id) decodeArrayForKey: (NSString *) key
-                     elementClass: (nullable Class) elementClass {
+- (nullable id) decodeArrayForKey:(NSString *)key
+                     elementClass:(nullable Class)elementClass {
     id value = flatten(key, dd);
     if (nil == value) {
         return nil;
@@ -266,12 +263,12 @@ static id flatten(NSString* key, id dictionary) {
                 exceptionWithName:@"IncorrectDecodingMethod"
                 reason:@"You are trying to decode an element which is not an array with the 'decodeArrayForKey:elementClass:' method" userInfo:nil];
     }
-    NSArray* src = value;
-    NSMutableArray* dst = [NSMutableArray new];
+    NSArray *src = value;
+    NSMutableArray *dst = [NSMutableArray new];
     for (id item in src) {
         [dst addObject: [AZJsonCoder deserilializeObject:item
-                                                forKey:key
-                                           objectClass:elementClass]];
+                                                  forKey:key
+                                             objectClass:elementClass]];
     }
     return dst;
 }

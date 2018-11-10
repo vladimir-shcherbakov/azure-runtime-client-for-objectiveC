@@ -13,12 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AZJsonCoder : NSObject <AZCoder>
 {
-    @private NSMutableDictionary* dd;
+    @private NSMutableDictionary *dd;
 }
 
-+ (NSData*) encodeObject: (id) codable;
-+ (nullable id) decodeData: (NSData*) jsonData objectClass: (Class) objectClass;
-+ (nullable id) decodeContainer: (NSData*) jsonData elementClass: (Class) elementClass;
++ (NSData *)encodeObject:(id)codable;
++ (nullable id)decodeData:(NSData *)jsonData objectClass:(Class)objectClass;
++ (nullable id)decodeContainer:(NSData *)jsonData elementClass:(Class)elementClass;
 
 @end
 

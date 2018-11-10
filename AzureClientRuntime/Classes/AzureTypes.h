@@ -20,13 +20,12 @@ typedef NSData AZStream;
 typedef NSString AZBase64Url;
 
 @protocol AZBoolean <NSObject>
-- (instancetype) initWithBool: (BOOL) val;
--(BOOL) getBool;
+- (instancetype)initWithBool:(BOOL)val;
+-(BOOL)getBool;
 @end
 
 @protocol AZStringEnum <NSObject>
 + (instancetype)fromString:(NSString *)string;
-//+ (NSString *)toStringValue:(id<AZStringEnum>)value;
 @end
 
 @interface AZBoolean : NSObject <AZBoolean>
@@ -46,8 +45,8 @@ typedef NSString AZBase64Url;
 #define AZ_NULLABLE(VAR) VAR?VAR:AZ_NULL
 
 @interface NSString (base64)
-- (NSString*) base64Decoded;
-- (NSString*) base64UrlDecoded;
+- (NSString*)base64Decoded;
+- (NSString*)base64UrlDecoded;
 @end
 
 
