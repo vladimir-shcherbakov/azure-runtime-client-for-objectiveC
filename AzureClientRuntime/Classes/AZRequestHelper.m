@@ -39,7 +39,7 @@
                                                       options:NSJSONReadingAllowFragments
                                                         error:&error];
             if (json != nil) {
-                NSLog(@"%@ BODY: %@", prefix, json);
+                NSLog(@"%@ %@", prefix, json);
             } else {
                 NSString* bodyAsString = [NSString stringWithUTF8String:[body bytes]];
                 if (bodyAsString != nil) {
@@ -56,7 +56,7 @@
     }
 }
 + (void)logResponseBody:(NSData*)body {
-    NSString* prefix = @"\n>>>>  BODY:";
+    NSString* prefix = @"\n>>>> BODY:";
     if (body && body.length > 0) {
         if (body.length < 2048) {
             NSError* error;
