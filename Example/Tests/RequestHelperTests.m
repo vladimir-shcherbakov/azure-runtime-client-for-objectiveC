@@ -11,6 +11,7 @@
 #import "Note.h"
 #import "ComplexModel.h"
 #import "SimpleModel.h"
+#import "AzTestError.h"
 
 @interface RequestHelperTests : XCTestCase
 
@@ -55,5 +56,25 @@
                                                      withHeaders:@{@"Content-Type":@"application/octet-stream"}
                                                         withBody:nil];
     [rp withSpecialHeaders:@{@"sk1":@"sv1", @"sk2":@"sv2"}];
+}
+- (void) testErrorAsJson {
+    XCTestExpectation *waitingLoading = [self expectationWithDescription:@"Wait for HTTP request to complete"];
+    
+    NSString *body = @"{\"url\": \"https://testpictures.blob.core.windows.net/cogsrv/analyze1.jpg\"}";
+    
+    AZRequestParameters* rp = [AZRequestParameters createWithUrl:@"https://westus2.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceLandmarks=false&returnFaceId=true&returnFaceAttributes=age,gender,emotion"
+                                                      withMethod:@"POST"
+                                                     withHeaders:@{@"Content-Type":@"application/json; charset=utf-8",@"Ocp-Apim-Subscription-Key":@"123"}
+                                                        withBody:[AZJsonCoder encodeObject:body]];
+    [AZRequestHelper executeRequest:rp
+                     withErrorClass:[AZTestError class]
+                       withCallback:^(AZOperationError* _Nullable error) {
+                           [waitingLoading fulfill];
+                           XCTAssertNotNil(error, @"%@", error.reason);
+                       }];
+   
+    [self waitForExpectationsWithTimeout:100 handler:^(NSError *error) {
+        if (error) {XCTFail(@"After block was not called.");}
+    }];
 }
 @end

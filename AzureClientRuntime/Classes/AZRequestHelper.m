@@ -182,17 +182,7 @@
         if (statusCode >= 400) {
             if (data && data.length > 0) {
                 @try {
-                    id serverErr;
-                    if (errorClass == [AZDefaultErrorModel class]) {
-                        AZDefaultErrorModel *dem = [AZDefaultErrorModel new];
-                        dem.message = [NSString stringWithUTF8String:[data bytes]];
-                        serverErr = dem;
-                    } else {
-                        serverErr = [AZJsonCoder decodeData:data objectClass:[errorClass class]];
-                    }
-                    // try to extract error message from error models seen so far.
-                    NSString *msg = getErrorMessage(serverErr);
-                    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:msg];
+                    AZOperationError *err = parseError(errorClass, data);
                     callback(nil, err);
                 } @catch (NSException* e) {
                     AZOperationError* err = [AZOperationError errorWithDomain:e.name withReason:e.reason];
@@ -224,15 +214,33 @@
         }
     }];
 }
-static NSString *getErrorMessage(id serverErr) {
-    NSString *msg = @"UNDEFINED";
+static AZOperationError *parseError(Class errorClass, NSData *data) {
+    id serverErr;
+    if ([errorClass isSubclassOfClass:[AZDefaultErrorModel class]]) {
+        AZDefaultErrorModel *dem = [AZDefaultErrorModel new];
+        dem.message = [NSString stringWithUTF8String:[data bytes]];
+        serverErr = dem;
+    } else {
+        serverErr = [AZJsonCoder decodeData:data objectClass:[errorClass class]];
+    }
+    // try to extract error message from error models seen so far.
+    NSString *msg = getErrorMessage(serverErr, data);
+    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:msg];
+    return err;
+}
+static NSString *getErrorMessage(id serverErr, NSData *data) {
+    NSString *msg = nil;
     if ([serverErr respondsToSelector:@selector(message)]) {
         msg = [serverErr message];
     } else if ([serverErr respondsToSelector:@selector(error)]) {
         if ([[serverErr error]isKindOfClass:[NSString class]]) {
             msg = (NSString *)[serverErr error];
         }
-        return getErrorMessage([serverErr error]);
+        return getErrorMessage([serverErr error], data);
+    }
+    if (!msg) {
+        // return as json string
+        msg = [NSString stringWithUTF8String:[data bytes]];
     }
     return msg;
 }
@@ -250,8 +258,7 @@ static NSString *getErrorMessage(id serverErr) {
         if (statusCode >= 400) {
             @try {
                 if (data && data.length > 0) {
-                    id serverErr = [AZJsonCoder decodeData:data objectClass: [errorClass class]];
-                    AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError" withReason:[serverErr valueForKey:@"message"]];
+                    AZOperationError *err = parseError(errorClass, data);
                     callback(err);
                 } else {
                     AZOperationError *err = [AZOperationError errorWithDomain:@"ServerError"
